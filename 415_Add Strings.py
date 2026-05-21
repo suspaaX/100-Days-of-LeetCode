@@ -25,7 +25,28 @@ num2 = "77"
 Output: "533"
 
 
+# num1 = "0"
+# num2 = "0"
+# Output: "0"
+
+# num1 = "111"
+# num2 = "123"
+# Output: "234"
+
+
+
+
 def addStrings(num1, num2):
+    sum = ''
+    for i,j in zip(num1,num2):
+        result = (str(num1[-1]))+(str(num2[-1]))
+        sum = sum+str(result)
+    return sum
+
+
+
+
+
     
 
 

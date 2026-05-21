@@ -55,6 +55,5 @@ def findWordsContaining(words, x):
         if x in j:
             result.append(i)
     return result
-            
 
 print(findWordsContaining(words, x))

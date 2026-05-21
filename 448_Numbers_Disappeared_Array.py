@@ -34,32 +34,12 @@ Output =  [5,6]
 
 
 def findDisappearedNumbers(nums):
-    fnum = nums[0]
-    lnum = nums[-1]
-    nums_len = len(nums)
-
-    if nums_len == 2 and 1 not in nums and nums[0] == fnum and nums[-1] == fnum:
-        return [1]
-    
-    elif nums_len == 2 and nums[0] == 1 and nums[-1] == 1:
-        return [2]
-    
-    elif nums_len>2 :
-        nums.sort()
-        new_nums = []
-    
-        for i in range(1,nums_len+1):
-            new_nums.append(i)
-            result = set(new_nums) - set(nums)
-            return (list(result))
-     
-    # nums.sort()
-    # new_nums = []
-    # for i in range(1,nums[-1]+1):
-    #     new_nums.append(i)
-    # result = set(new_nums) - set(nums)
-
-    return (list(result))
+    nums.sort()
+    dis_num = []
+    for i in range(1,nums[-1]):
+        dis_num.append(i)
+    print(nums,dis_num)
+        
 
 
 

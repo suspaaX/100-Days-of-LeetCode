@@ -32,14 +32,9 @@ Output =  2
 
 
 def majorityElement(nums) :
-    my_dict = {}
+    elem = []
     for i in nums:
-        x = nums.count(i)
-        my_dict.update({i:x})
-
-    print(my_dict)
-    # majority = max(my_dict,key=my_dict.get)
-    # return (majority)
+        pass
  
 
 print(majorityElement(nums))

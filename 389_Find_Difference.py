@@ -26,18 +26,23 @@ Output =  "e"
 
 
 def findTheDifference(s ,t):
-    lst1 = []
-    for i in s:
-        lst1.append(i)
-    # print(lst1)
-    
-    lst2 = []
-    for k in t:
-        lst2.append(k)
-    # print(lst2)
+    new_ltr = str()
+    if s[0:len(s)] !=  t[0:len(t)]:
+        
 
-    # print(lst1-lst2)
 
-    return (set(lst1).intersection(set(lst2)))
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 print(findTheDifference(s ,t))

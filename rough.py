@@ -68,17 +68,19 @@
 
 # print(longest)
 
-nums = [2,4,4,3]
-Output = 3
+# nums = [2,4,4,3]
+# Output = 3
 
 # majority = max(my_dict,key=my_dict.get)
 # print(majority)
 
-my_dict = {}
-for i in nums:
-    x = nums.count(i)
-    my_dict.update({i:x})
+# my_dict = {}
+# for i in nums:
+#     x = nums.count(i)
+#     my_dict.update({i:x})
 
 #     key=my_dict.get()
 
 # print(key)
+
+

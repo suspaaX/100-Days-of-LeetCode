@@ -24,25 +24,24 @@ s = "abcd"
 t = "abcde"
 Output =  "e"
 
+# s= ""
+# t = "y"
+# Output = "y"
 
-def findTheDifference(s ,t):
-    new_ltr = str()
-    if s[0:len(s)] !=  t[0:len(t)]:
-        
+# s = "a"
+# t = "aa"
+# Output = "a"
 
+# s = "ae"
 
+# t = "aea"
 
-
-
-
-
-
-
-
+# output = "a"
 
 
+def findTheDifference(s,t):
+    pass
 
-
-
+    
 
 print(findTheDifference(s ,t))

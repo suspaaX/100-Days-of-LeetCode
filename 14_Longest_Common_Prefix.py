@@ -22,12 +22,8 @@ Output = "fl"
 
 
 def longestCommonPrefix(strs):
-    result = []
-    for word in strs:
-        for ltr in word:
-            if ltr[0:len(ltr)] in word:
-                result.append(ltr[0:len(ltr)])
-    print(result)
+    for i
+
 
 
 print(longestCommonPrefix(strs))      

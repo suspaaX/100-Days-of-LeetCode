@@ -26,43 +26,11 @@ Output =  [1,2]
 # Output = [0,1]
 
 def twoSum(nums,target) :
-    new_num = []
-    
-    tar = 0
+    idx = []
+    sum = 0
+    lst = []
     for i in nums:
-        if i < target :
-            new_num.append(i)
-            
-            new_val = []
-            for i in range(len(new_num)-1):
-                new_val.append(i)
-            print(new_val)
-
-
-
-
-
-    # result = []           
-    # for i,k in enumerate(new_num):
-    #     result.append(i)
-    # return result
-
-
-            
-
-    
-    # result = []
-    # # if sum(new_num) == target:
-    # for k in new_num:
-    #     idx = new_num.(k)
-    #     print(idx)
-    #     result.append(idx)
-    # print(result)
-
-
-    
-    
-    # # return (result)
+        split
 
 
 

@@ -38,10 +38,18 @@ Output: "533"
 
 def addStrings(num1, num2):
     sum = ''
-    for i,j in zip(num1,num2):
-        result = (str(num1[-1]))+(str(num2[-1]))
-        sum = sum+str(result)
-    return sum
+    # print(len(num1),len(num2))
+
+    if len(num1) ==  len(num2):
+
+
+
+
+
+    # for i,j in zip(num1,num2):
+    #     result = (str(num1[-1]))+(str(num2[-1]))
+    #     sum = sum+str(result)
+    # return sum
 
 
 

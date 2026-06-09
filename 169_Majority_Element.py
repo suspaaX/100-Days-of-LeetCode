@@ -17,24 +17,30 @@ Input: nums = [2,2,1,1,1,2,2]
 Output: 2
 
 '''
-# nums =[3,3,4]
-# Output =  3
+nums =[3,3,4]
+Output =  3
 
 # nums = [3,2,3]
 # Output = 3
 
-nums = [2,2,1,1,1,2,2]
-Output =  2
-
-# nums = [2,4,4,3]
-# Output = 3
+# nums = [2,2,1,1,1,2,2]
+# Output =  2
 
 
 
 def majorityElement(nums) :
-    elem = []
-    for i in nums:
-        pass
- 
+    dict1 = {}
+
+    for elem in nums:
+        no = nums.count(elem)
+        dict1.update({no:elem})
+
+    for max_key in dict1:
+        max_key = max(dict1.keys())
+
+        
+    value = dict1.get(max_key)
+    return value
+
 
 print(majorityElement(nums))

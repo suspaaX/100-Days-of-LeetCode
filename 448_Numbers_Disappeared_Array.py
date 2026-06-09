@@ -15,8 +15,8 @@ Output: [2]
 '''
 
 
-# nums = [1,1]
-# Output =  [2]
+nums = [1,1]
+Output =  [2]
 
 # nums = [2,2]
 # Output =  [1]
@@ -28,19 +28,18 @@ Output: [2]
 # nums = [1,1,2,2]
 # output = [3,4]
 
-nums = [4,3,2,7,8,2,3,1]
-Output =  [5,6]
+# nums = [4,3,2,7,8,2,3,1]
+# Output =  [5,6]
 
 
 
 def findDisappearedNumbers(nums):
-    nums.sort()
-    dis_num = []
-    for i in range(1,nums[-1]):
-        dis_num.append(i)
-    print(nums,dis_num)
+    result = []
+    for i in range(1,len(nums)+1):
+        result.append(i)
+
+        x = list((set(result)- set(nums)))
         
-
-
+    return x
 
 print(findDisappearedNumbers(nums))

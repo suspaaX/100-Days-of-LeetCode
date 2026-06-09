@@ -30,17 +30,20 @@ s = "codeleet"
 indices = [4,5,6,7,0,2,1,3]
 Output =  "leetcode"
 
+# s = "abc"
+# indices = [0,1,2]
+# Output: "abc"
 
 def restoreString(s, indices):
-    dict1 = {}
-    for i,k in zip(s,indices):
-        dict1.update({k:i})
-    # print(dict1)
-    
-    new_ltr = [dict1]
-    new_ltr.sort()
-    print(new_ltr)
+    new_dict = {}
+    for i,j in zip(s,indices):
+        new_dict.update({j:i})
+        
+    shuffled_string = str()
+    for i in range(0,len(s)):
+        if i in new_dict:
+            shuffled_string = shuffled_string + new_dict.get(i)
 
-
+    return shuffled_string
 
 print(restoreString(s, indices))

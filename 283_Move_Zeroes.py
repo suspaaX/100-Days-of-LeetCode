@@ -25,20 +25,21 @@ Output: [0]
 nums = [0,1,0,3,12]
 Output =  [1,3,12,0,0]
 
+# nums = [0]
+# Output = [0]
+
 def moveZeroes(nums):
-    """
-    Do not return anything, modify nums in-place instead.
-    """
-    new_lst1 = []
-    new_lst2 = []
+    lst = []
+    lst2 = []
+
     for i in nums:
-        if i != 0:
-            new_lst1.append(i)
-        else :
-            new_lst2.append(i)
+        if i >= 1:
+            lst.append(i)
+    
+        elif i <1 :
+            lst2.append(i)
 
-    result = new_lst1+new_lst2
+    return (lst+lst2)
 
-    return result
 
 print(moveZeroes(nums))

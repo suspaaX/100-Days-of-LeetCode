@@ -28,10 +28,13 @@ sentences = ["alice and bob love leetcode", "i think so too", "this is great tha
 Output: 6
 
 def mostWordsFound(sentences):
-    total_sen = []
+    lst = []
     for sentence in sentences:
-        pass
+        x = sentence.split()
+        y = len(x)
+        lst.append(y)
 
+    return max(lst)
 
 
 print(mostWordsFound(sentences))

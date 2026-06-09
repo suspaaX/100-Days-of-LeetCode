@@ -84,3 +84,54 @@
 # print(key)
 
 
+
+# digits = [4,3,2,1]
+# x = [digits[-1]+1]
+# digits.pop(-1)
+
+# print(digits,x)
+
+# n = [9]
+
+# x = (n[0]+1)
+# result = []
+# for i in str(x):
+#     result.append(int(i))
+# print(result)
+
+# digits = [1,3]
+
+# print(digits[-1])
+
+# print(digits[len(digits)-1]+1)
+
+# str1 = str('a')
+# str2 = str('z')
+
+# for i in range(65,91):
+#     print(chr(i))
+
+
+# nums = [0,0,0,0,0]
+# # n = 0
+# # print(len(n))
+# # nums.clear()
+# # print(nums)
+
+# # nums = [1,2,3,4,5,0]
+# nums = [0,0,0,0,0]
+
+# for elem in nums:
+#     if nums[elem] == 0:
+#         x =  nums.pop(elem)
+
+# print(x[0])
+#     # else:
+#     #     print(nums)
+
+nums = 'abbb'
+
+# print(nums[0:2])
+# for i in nums:
+#     print(i)
+

@@ -20,13 +20,13 @@ Example 2:
 Input: s = "", t = "y"
 Output: "y"
 '''
-s = "abcd"
-t = "abcde"
-Output =  "e"
+# s = "abcd"
+# t = "abcde"
+# Output =  "e"
 
-# s= ""
-# t = "y"
-# Output = "y"
+s= ""
+t = "y"
+Output = "y"
 
 # s = "a"
 # t = "aa"
@@ -40,8 +40,6 @@ Output =  "e"
 
 
 def findTheDifference(s,t):
-    pass
-
     
 
 print(findTheDifference(s ,t))

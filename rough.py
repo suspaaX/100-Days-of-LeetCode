@@ -129,9 +129,46 @@
 #     # else:
 #     #     print(nums)
 
-nums = 'abbb'
+# nums = 'abbb'
 
 # print(nums[0:2])
 # for i in nums:
 #     print(i)
 
+#list split
+
+# x =[1,3,4,7,5]
+
+# result = []
+
+# for i in range(0,len(x),2):
+
+#     result.append(x[i:i+2])
+
+
+# print(result)
+
+
+# g =  "G()()()()(al)"
+
+# x = g.split("()")
+
+# print(x)
+
+# for i in x:
+#     print(i)
+
+# print(x)
+
+
+# s = ""
+# print(s)
+
+n = [2,4,6,8,10]
+
+result = []
+for i in n:
+    if i == 4 or 10:
+        result.append(i)
+
+    print(result)

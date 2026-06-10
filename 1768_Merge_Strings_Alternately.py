@@ -49,8 +49,10 @@ Output =  "apbqcd"
 
 
 def mergeAlternately(word1,word2):
-    merge = [set(word1).union(set(word2))]
-    print(merge)
+    merged_string = str()
+
+    for ltr1 in word1:
+        
 
         
 

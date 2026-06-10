@@ -52,18 +52,25 @@ def interpret(command):
     dict1 = {
 
         'G':'G',
-        '(' or ')' : 'o ',
-        '(' or 'al' or ')' : ' al'
+        ' ':'o',
+        '(al)':'al'
 
 
         } 
 
-    for cmd in command:
-        # print(cmd)
-        if cmd in dict1:
-            Goal_Parser = Goal_Parser + dict1.get(cmd)
+    # for cmd in command:
+    #     # print(cmd)
+    #     if cmd in dict1:
+    #         Goal_Parser = Goal_Parser + dict1.get(cmd)
 
-    return Goal_Parser
+    # return Goal_Parser
+    x = command.split('()')
+    print(x)
+    for i in x:
+        if i in dict1:
+            Goal_Parser = Goal_Parser+dict1.get(i)
+
+    print(Goal_Parser)
 
 
 print(interpret(command))

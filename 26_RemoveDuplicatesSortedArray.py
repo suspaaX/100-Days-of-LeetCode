@@ -43,9 +43,6 @@ nums = [1,1,2]
 Output =  2 
 
 def removeDuplicates(nums):
-    k = []
-    nums  = set(nums)
-    k.append(len(nums))
-    return k[0],list(nums)
 
-print(removeDuplicates(nums))
+
+# print(removeDuplicates(nums))

@@ -7,4 +7,6 @@ Output =  "jkab"
 
 
 def freqAlphabets(s): 
-    dict1 =
+    x = s.split('#')
+
+    print(x)

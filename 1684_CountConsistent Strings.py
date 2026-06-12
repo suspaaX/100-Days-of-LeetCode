@@ -30,8 +30,16 @@ Output: 4
 
 
 def countConsistentStrings(allowed, words):
-    lst = []
-    for i in range(0,len(allowed)):
-        print(i)
-        
+    alwd = [i for i in allowed]
+
+    result = []
+    for i in words:
+        if i[0:len(i)] in alwd:
+            print('yes')
+
+
+
+
+
+
 print(countConsistentStrings(allowed, words))

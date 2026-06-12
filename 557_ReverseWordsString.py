@@ -24,19 +24,13 @@ Output =  "s'teL ekat edoCteeL tsetnoc"
 
 
 def reverseWords(s) :
-
-    rev = []
-    # result = ''
     x = s.split()
+
+    str1 = ''
     for i in x:
-        j = i[::-1]
-        rev.append(j)
-        "#".join(rev)
+        rvsr = i[::-1]
+        str1 = str1+rvsr+str(' ')
 
-    # for i in rev:
-    #     result = result + i
-
-    # return str().join(result)
-    return rev
+    return str1[0:len(str1)-1]
 
 print(reverseWords(s))

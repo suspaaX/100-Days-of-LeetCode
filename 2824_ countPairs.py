@@ -34,3 +34,15 @@ Explanation: There are 10 pairs of indices that satisfy the conditions in the st
 - (4, 6) since 4 < 6 and nums[4] + nums[6] = -4 < target
 
 '''
+
+nums = [-1,1,2,3,1]
+target = 2
+Output = 3
+
+def countPairs(nums,target):
+    all_poss = []
+    for i in range(0,len(nums)):
+        print(i,nums[i],nums[i+1:len(nums)])
+
+(countPairs(nums,target))
+        

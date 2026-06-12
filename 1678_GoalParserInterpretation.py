@@ -1,9 +1,5 @@
 '''
 
-Code
-Testcase
-Testcase
-Test Result
 1678. Goal Parser Interpretation
 Easy
 Topics
@@ -46,11 +42,11 @@ Output =  "Gooooal"
 # command = "G()(al)"
 # Output =  "Goal"
 
-# command = 'G'
-# Output = 'G'
+command = 'G'
+Output = 'G'
 
-# command = '()G'
-# Output = ''
+command = '()G'
+Output = ''
 
 def interpret(command):
     str0 = 'G'
@@ -63,20 +59,10 @@ def interpret(command):
     '(al)':'al',  
     }
     
-
-    # if str0 or str1 or str2 in command:
-    #     return str0
-
-    # if str1 in command:
-    #     x = command.replace(str1,'o') 
-
-    # if str2 in x:
-    #     y = x.replace(str2,'al')
-
-    # return y
-
-    if dict1 in command:
-        print(dict1.keys()
+    ltr = ''
+    x = dict1.keys()
+    if  x in command:
+        print(dict1.values())
 
 
 

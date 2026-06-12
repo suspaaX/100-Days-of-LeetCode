@@ -49,14 +49,18 @@ Output =  "apbqcd"
 
 
 def mergeAlternately(word1,word2):
-    if len(word1) != len(word2):
+    total_len = len(word1)+len(word2)
+    x1 = [i for i in word1]
+    x2 = [i for i in word2]
+    result = ''
+    for i in range(0,total_len):
+        print(x1[i],x2[i])
+    #     result = result+x1[i]+x2[i]
+
+    # return result
+
         
-    merged_string = ''
-    for i in range(0,len(word1)):
-        print(word2[i])
-    #     sum1 = word1[i]+word2[0:i]
-    #     merged_string = merged_string+sum1
-    # return merged_string
+
         
 
 print(mergeAlternately(word1,word2))

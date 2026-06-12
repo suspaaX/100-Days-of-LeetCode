@@ -164,11 +164,12 @@
 # s = ""
 # print(s)
 
-n = [2,4,6,8,10]
+# n = [2,4,6,8,10]
 
-result = []
-for i in n:
-    if i == 4 or 10:
-        result.append(i)
+# result = []
+# for i in n:
+#     if i == 4 or 10:
+#         result.append(i)
 
-    print(result)
+#     print(result)
+

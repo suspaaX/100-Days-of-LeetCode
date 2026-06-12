@@ -32,13 +32,16 @@ nums = [1,2,3,4]
 Output =  [1,3,6,10]
 # Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
 
+# nums = [3,1,2,10,1]
+# Output = [3,4,6,16,17]
+
 
 def runningSum(nums) :
     running_sum = []
-    for idx,elem in enumerate(nums):
-        sum1 = nums[idx-1]
-        running_sum.append(sum1)
-    return running_sum
-        
+    for i in range(0,len(nums)):
+        running_sum.append(sum(nums[0:i+1]))
 
+    return running_sum
+
+        
 print(runningSum(nums))

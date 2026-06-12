@@ -44,8 +44,8 @@ Thus, the result should be [1,0].
 # digits = [4,3,2,1]
 # Output =  [4,3,2,2]
 
-# digits = [1,2,3]
-# Output =  [1,2,4]
+digits = [1,2,3]
+Output =  [1,2,4]
 
 # digits = [1,0]
 # Output = [1,1]
@@ -60,30 +60,6 @@ Output = [1,1]
 
 def plusOne(digits):
 
-#     list2 = [digits[len(digits)-1]+1]
-
-#     if len(digits) >= 2:
-#         digits.pop(-1)
-#         result = digits+list2
-#         return result
-
-#     elif len(digits) == 1 and digits[0] <9:
-#         return list2
-    
-#     elif len(digits) == 1 and digits[0] == 9:
-#         x = (digits[0]+1)
-#         result = []
-#         for i in str(x):
-#             result.append(int(i))
-#         return result
-
-# print(plusOne(digits))
-
-    list1 = []
-    for i in (digits):
-        list1.append(int(i))
-
-    print(list1)
 
 
 print(plusOne(digits))

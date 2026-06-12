@@ -33,8 +33,13 @@ Output: 4
 
 
 def numIdenticalPairs(nums):
+    pairs =[]
     for i in range(0,len(nums)):
-        print(nums[i:len(nums)])
+        if nums[i] in nums[i+1:len(nums)]:
+            print(i,nums[i],nums[i+1:len(nums)])
 
+
+
+    return pairs
 
 print(numIdenticalPairs(nums))

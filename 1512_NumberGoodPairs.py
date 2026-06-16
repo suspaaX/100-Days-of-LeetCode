@@ -31,15 +31,38 @@ Output: 0
 nums = [1,2,3,1,1,3]
 Output: 4
 
+# nums = [1,1,1,1]
+# Output: 6
+# Explanation: Each pair in the array are good.
+
+# nums = [1,2,3,4]
+# Output: 6
 
 def numIdenticalPairs(nums):
-    pairs =[]
+    good_pairs = []
+    result = []
+
     for i in range(0,len(nums)):
-        if nums[i] in nums[i+1:len(nums)]:
-            print(i,nums[i],nums[i+1:len(nums)])
+        pairs = []
+        for k in nums:
+            if k != nums[i]:
+                pairs.append(nums[i:i+2])
+            good_pairs.append(pairs)
 
+        #     pairs.append(nums[i:i+2])
+        # print(pairs)
+    #     good_pairs.append(pairs)
+    # print(good_pairs)
 
+    # for gp in good_pairs:
+    #     if len(gp) == 2:
+    #         print(gp)
+        # print
+        # print(gp)
+    #     for k in i:
+    #             if k[0] == k[1]:
+    #                 result.append(k)
 
-    return pairs
+    # return (len(result))
 
 print(numIdenticalPairs(nums))

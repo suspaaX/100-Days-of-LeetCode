@@ -41,5 +41,17 @@ Explanation: The digits are replaced as follows:
 s = "a1c1e1"
 Output =  "abcdef"
 
-def replaceDigits(s)
+# s = "a1b2c3d4e"
+# Output =  "abbdcfdhe"
+
+def replaceDigits(s):
+    lst = []
+    for i in range(0,len(s)):
+        if i%2!= 0:
+            print(i)
+
+
+        
+
+print(replaceDigits(s))
         

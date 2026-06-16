@@ -29,4 +29,18 @@ nums = [10,4,8,3]
 Output =  [15,1,11,22]
 
 def leftRightDifference(nums):
-    pass
+    left_sum = []
+    right_sum = []
+
+
+    for i in range(0,len(nums)):
+        dummy = []
+        for j in nums:
+            if nums[i] != j:
+                dummy.append(j)
+        left_sum.append(dummy)
+
+    return left_sum
+
+
+print(leftRightDifference(nums))

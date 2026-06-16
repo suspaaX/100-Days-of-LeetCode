@@ -70,23 +70,18 @@ Output = 30
 
 
 def calPoints(ops):
-    sum = []
-    dict1 = {
-        int(i): list().append(int(i)),
-
-
-
-    }
+    sum1 = []
+    sum2 = []
+    # dict1 = {
+    #     int(i): list().append(int(i)),
+    # }
     for i in ops:
-        print(i)
-
-    print(dict1)
-
-
-
-
-
-
+        if  i is int(i):
+            sum1.append(i)
+        elif i is str(i):
+            sum2.append(i)
+            
+    print(sum1,sum2)
 
 
 (calPoints(ops))

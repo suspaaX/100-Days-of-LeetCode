@@ -31,8 +31,8 @@ Output = 2
 
 def findPeakElement(nums):
     max_elem = max(nums)
-    x = nums.index(max_elem)
-    print(x)
+    idx = nums.index(max_elem)
+    return idx
 
         
 findPeakElement(nums)

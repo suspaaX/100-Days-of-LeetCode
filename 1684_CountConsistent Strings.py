@@ -30,12 +30,13 @@ Output: 4
 
 
 def countConsistentStrings(allowed, words):
-    alwd = [i for i in allowed]
+    char = []
+    for i in allowed:
+        char.append(i)
+    print(char)
 
-    result = []
-    for i in words:
-        if i[0:len(i)] in alwd:
-            print('yes')
+    # for char 
+
 
 
 

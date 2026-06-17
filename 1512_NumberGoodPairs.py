@@ -39,30 +39,15 @@ Output: 4
 # Output: 6
 
 def numIdenticalPairs(nums):
-    good_pairs = []
-    result = []
-
+    l2 = []
     for i in range(0,len(nums)):
-        pairs = []
-        for k in nums:
-            if k != nums[i]:
-                pairs.append(nums[i:i+2])
-            good_pairs.append(pairs)
+        x = (nums[i:len(nums)])
+        l1 = []
+        for k in x:
+            l1.append(x[0:2])
+    l2.append(l1)
 
-        #     pairs.append(nums[i:i+2])
-        # print(pairs)
-    #     good_pairs.append(pairs)
-    # print(good_pairs)
+    print(l2)
 
-    # for gp in good_pairs:
-    #     if len(gp) == 2:
-    #         print(gp)
-        # print
-        # print(gp)
-    #     for k in i:
-    #             if k[0] == k[1]:
-    #                 result.append(k)
-
-    # return (len(result))
 
 print(numIdenticalPairs(nums))

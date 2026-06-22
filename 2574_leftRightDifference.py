@@ -32,8 +32,6 @@ def leftRightDifference(nums):
     left_sum = []
     right_sum = []
     for i in range(0,len(nums)):
-        print(i)
-
-
+        left_sum
 
 print(leftRightDifference(nums))

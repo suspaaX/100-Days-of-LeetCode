@@ -3,13 +3,14 @@ Output =  [24,12,8,6]
 
 
 def productExceptSelf(nums) :
-    idx = []
+    product = []
+    mul1 = 1
     for i in range(0,len(nums)):
-        idx.append(i)
-
-    result = []
-    for i in nums:
-        nums.pop(1)
-    print(nums)
+        print(nums[i],nums)
+        if nums[i] in nums:
+            x = nums.pop(i)
+            product.append(x)
+    print(product)
+                
 
 productExceptSelf(nums)

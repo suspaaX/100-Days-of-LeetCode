@@ -49,18 +49,7 @@ Output =  "apbqcd"
 
 
 def mergeAlternately(word1,word2):
-    # total_len = len(word1)+len(word2)
-    # x1 = [i for i in word1]
-    # x2 = [i for i in word2]
-    # result = ''
-    # for i in range(0,total_len):
-    #     print(x1[i],x2[i])
-    #     result = result+x1[i]+x2[i]
-
-    # return result
-
-    if len(word1)>word2
-        
+    req_space = len(word2)
 
         
 

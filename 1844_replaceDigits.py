@@ -45,12 +45,17 @@ Output =  "abcdef"
 # Output =  "abbdcfdhe"
 
 def replaceDigits(s):
-    lst = []
-    for i in range(0,len(s)):
-        if i%2!= 0:
-            print(i)
-
-
+    for i in range(97,123):
+        # print(chr(i))
+        pass
+    
+    prs = []
+    for i in range(1,len(s)+1,2):
+        print(i)
+        rslt = s[i]
+        # x = rslt.splt(',')
+        prs.append(rslt)
+    print(prs)
         
 
 print(replaceDigits(s))

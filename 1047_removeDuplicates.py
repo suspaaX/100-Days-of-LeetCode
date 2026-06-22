@@ -26,12 +26,12 @@ Output =  "ca"
 
 
 def removeDuplicates(s):
-    result = []
-    for i in range(0,len(s)):
+    ltr = []
+    for i,k in enumerate(s):
+        ltr.append(s[i:i+2])
+    print(ltr)
 
-        print(s[i])
-    #     if s[i] == s[i+1]:
-    #         result.append(s[i+1:len(s)])
-    # return result
+
+
 
 print(removeDuplicates(s))

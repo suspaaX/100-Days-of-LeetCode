@@ -25,20 +25,23 @@ Output: 0
 num = 38
 Output =  2
 
-num = 0
-Output: 0
+# num = 0
+# Output: 0
 
 # Explanation: The process is
 # 38 --> 3 + 8 --> 11
 # 11 --> 1 + 1 --> 2 
 # Since 2 has only one digit, return it.
 
-# def addDigits(num): 
-#     str1 = str(num)
-#     if len(str1) == 1:
-#         return num
+def addDigits(num): 
+    sum1 = 0
+    if len(str(num)) == 1:
+        return num
     
-#     elif len(str1)>1:
+    elif len(sum1)>=2:
+        if len(str(num)) <=2 :
+            for i in str(num):
+                sum1 = sum1+int(i)
 
 
-# print(addDigits(num))    
+print(addDigits(num))    

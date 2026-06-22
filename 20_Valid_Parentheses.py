@@ -64,21 +64,9 @@ Output = True
 
 
 def isValid(s):
-    dict1 = {
-        '(':1,
-        ')':2,
-        '{':3,
-        '}':4,
-        '[':5,
-        ']':6
-        
-        }
+    for i in range(0,len(s)):
+        print(i)
 
-    # if s in dict1:
-    for i in s:
-        if i in dict1:
-            dict1.get(i)
-           
       
 
 print(isValid(s))

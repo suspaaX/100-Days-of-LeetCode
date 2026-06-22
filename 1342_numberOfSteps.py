@@ -39,8 +39,6 @@ Output: 12
 
 '''
 
-
-
 num = 14
 Output: 6
 # Explanation: 
@@ -52,12 +50,22 @@ Output: 6
 # Step 6) 1 is odd; subtract 1 and obtain 0.
 
 
-
-
 def numberOfSteps(num):
-    step = 0
-    if num%2 == 0 :
-       x =  num/2 
-       step = step +1
-       if x%2 != 0 
-        
+    # step = 0
+    # if num%2==0 :
+    #     x = num/2
+    #     step = step+1
+    #     if 
+
+
+    # elif 
+    pass
+
+    print(step)
+
+
+
+
+
+
+numberOfSteps(num)

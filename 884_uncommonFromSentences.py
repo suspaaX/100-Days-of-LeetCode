@@ -37,13 +37,34 @@ s2 = "banana"
 Output = ["banana"]
 
 
+# s1 = "this apple is sweet"
+# s2 = "this apple is sour"
+
+# Output = ["sweet","sour"]
+
+
+
 
 def uncommonFromSentences(s1,s2) :
-    s1_lst = s1.split()
-    s2_lst = s2.split()
+    uncommon_words = []
+    s1_dup = s1.split(' ')
+    s2_dup = s2.split(' ')
+    sum1 = s1_dup+s2_dup
 
-    for i in s1_lst:
-        pass
+    dict1 = {}
+    for i in sum1:
+        x =sum1.count(i)
+        dict1.update({i:x})
 
+   
+    rslt = []
+    for key,val in dict1.items():  
+        x = key,val
+        rslt.append(x)
 
-print(uncommonFromSentences(s1,s2))
+    for i in rslt:
+        if i[1] == 1:
+            uncommon_words.append(i[0])
+    return (uncommon_words)
+
+print((uncommonFromSentences(s1,s2)))

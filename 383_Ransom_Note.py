@@ -26,12 +26,48 @@ ransomNote = "aa"
 magazine = "aab"
 Output =  True
 
+# ransomNote = "aakkk"
+# magazine = "ab"
+# Output = False
+
+
+# ransomNote = "aa"
+# magazine = "ab"
+# Output: False
+
+
+# ransomNote = "a"
+# magazine = "b"
+# Output: False
+
+
+
+# ransomNote = "a"
+# magazine = "b"
+# Output: False
+
+ransomNote = "abaa"
+magazine = "baaa"
+Output: True
 
 def canConstruct(ransomNote, magazine):
-    x = ransomNote
-    y = magazine
-    letter = x+y
-    print(letter)
+    list1 = []
+    for i in range(0,len(ransomNote)):
+        if i%2 == 0:
+            list1.append(ransomNote[i:i+2])
+        elif i%2 != 0 :
+            list1.append(ransomNote[i:i+2])
+
+    print(list1)
+    
+    for k in list1:
+        # print(k,magazine)
+        if k in magazine:
+            return True
+    else:
+        return False
+
+
 
 
 

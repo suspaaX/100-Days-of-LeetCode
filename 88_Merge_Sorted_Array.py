@@ -31,11 +31,6 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 '''
 
 
-nums1 = [1,2,3,0,0,0]
-m = 3
-nums2 = [2,5,6] 
-n = 3
-Output =  [1,2,2,3,5,6]
 
 # nums1 = [1] 
 # m = 1
@@ -60,22 +55,16 @@ Output = [1]
 
 # Output = [1,2,3,4,5]
 
+nums1 = [1,2,3,0,0,0]
+m = 3
+nums2 = [2,5,6] 
+n = 3
+Output =  [1,2,2,3,5,6]
 
 def merge(nums1,m,nums2,n) :
-    if m == 0:
-        nums1.extend(nums2)
-        return nums1[1]
-    
-    elif n == 0:
-        return nums1
+    for i in nums2:
+        nums1.append(i)
+    print(nums1)
 
-
-    elif m>=1 and n>=1:
-        for i in nums1:
-            nums1.remove(0)
-
-        nums1.extend(nums2)
-        nums1.sort()
-        return nums1
 
 print(merge(nums1,m,nums2,n))

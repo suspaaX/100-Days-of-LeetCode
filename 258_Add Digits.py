@@ -33,15 +33,20 @@ Output =  2
 # 11 --> 1 + 1 --> 2 
 # Since 2 has only one digit, return it.
 
-def addDigits(num): 
-    sum1 = 0
-    if len(str(num)) == 1:
+def addDigits(num):
+    str1 = str(num)
+
+    if len(str1) == 1:
         return num
     
-    elif len(sum1)>=2:
-        if len(str(num)) <=2 :
-            for i in str(num):
-                sum1 = sum1+int(i)
+
+    num = int()
+    while (len(str(num))) != 1:
+        # if len(str1) >  1:
+            for i in str1:
+                num = num+int(i)
+
+            
 
 
 print(addDigits(num))    

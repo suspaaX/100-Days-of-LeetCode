@@ -1,0 +1,89 @@
+'''
+
+Code
+Testcase
+Testcase
+Test Result
+205. Isomorphic Strings
+Easy
+Topics
+premium lock icon
+Companies
+Given two strings s and t, determine if they are isomorphic.
+
+Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+
+All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
+
+ 
+
+Example 1:
+
+Input: s = "egg", t = "add"
+
+Output: true
+
+Explanation:
+
+The strings s and t can be made identical by:
+
+Mapping 'e' to 'a'.
+Mapping 'g' to 'd'.
+Example 2:
+
+Input: s = "f11", t = "b23"
+
+Output: false
+
+Explanation:
+
+The strings s and t can not be made identical as '1' needs to be mapped to both '2' and '3'.
+
+Example 3:
+
+Input: s = "paper", t = "title"
+
+Output: true
+'''
+
+
+
+# s = "f11"
+# t = "b23"
+
+# Output: False
+
+s = "egg"
+t = "add"
+
+Output: True 
+
+s = "paper"
+t = "title"
+
+Output: True
+
+
+def isIsomorphic(s,t) :
+    dict1 = {}
+    list1 = []
+    list2 = []
+    for i,j in zip(s,t):
+        dict1.update({i:j})
+        list1.append(j)
+
+    for values in dict1.values():
+        print(values)
+        list2.append(values)
+    
+    print(list1,list2)
+
+    # if len(list1) == len(list2):
+    #     return True
+    
+    # else:
+    #     return False
+
+
+print(isIsomorphic(s,t))
+        

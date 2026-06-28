@@ -37,12 +37,17 @@ Explanation: There are 10 pairs of indices that satisfy the conditions in the st
 
 nums = [-1,1,2,3,1]
 target = 2
-Output = 3
 
 def countPairs(nums,target):
-    all_poss = []
+    prs = []
     for i in range(0,len(nums)):
-        print(i,nums[i],nums[i+1:len(nums)])
+        lst = []
+        for k in nums:
+            lst.append()
+
+
+
+
 
 (countPairs(nums,target))
         

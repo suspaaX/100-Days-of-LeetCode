@@ -49,27 +49,28 @@ Output =  True
 # 'a' maps to "dog".
 # 'b' maps to "cat".
 
-pattern = "abba"
-s = "dog cat cat fish"
+# pattern = "abba"
+# s = "dog cat cat fish"
 
-Output =  False
+# Output =  False
 
-pattern = "aaaa"
-s = "dog cat cat dog"
+# pattern = "aaaa"
+# s = "dog cat cat dog"
 
-Output = False
+# Output = False
 
 
 
 def wordPattern(pattern, s) :
     dict1 = dict()
-    key1 = s.split()
-    value = []
-    for i in pattern:
-        value.append(i)
+    x2 = s.split()
+    for k in range(0,len(x2)):
+        for i in pattern:
+            dict1.update({x2[k]:i})
+    print(dict1)
 
-    print(value)
-    # print(key1)
+
+    
 
 wordPattern(pattern, s)
         

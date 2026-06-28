@@ -22,12 +22,13 @@ Output = "fl"
 
 
 def longestCommonPrefix(strs):
-    result = []
-    chk = [i for i in strs[0]]
-    x = strs[0][0],strs[1][0],strs[2][0]
-    if (chk[0] == x):
-        result.append(chk[0])
-    print(result)
+    cmn = []
+    for i in  strs:
+        # print(i[0],strs[0][-1])
+        print(strs[0][0],i[0])
+        if strs[0][0] == i[0]:
+            cmn.append(strs[0][0])
+    print(cmn)
 
 
 

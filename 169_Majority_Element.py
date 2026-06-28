@@ -23,23 +23,16 @@ Output =  3
 # nums = [3,2,3]
 # Output = 3
 
-nums = [2,2,1,1,1,2,2]
+nums = [2,2,1,1,1,2,2,1,1]
 Output =  2
 
 
-
 def majorityElement(nums) :
-    dict1 = {}
-    for i in nums:
-        y = nums.count(i)
-        dict1.update({i:y})
+    for i in range(0,len(nums)):
+        for k in nums:
+            pass
 
-    lst1 = []
-    for key,val in dict1.items():
-        x = key,val
-        print(x)
-        
 
-    
+
 
 print(majorityElement(nums))

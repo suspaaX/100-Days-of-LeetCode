@@ -28,30 +28,27 @@ Output: 0
 
 '''
 
+
+# nums = [1,1,1,1]
+# Output: 6
+# Explanation: Each pair in the array are good.
+
+# nums = [1,2,3]
+# Output: 0
+
 nums = [1,2,3,1,1,3]
 Output: 4
 
-nums = [1,1,1,1]
-Output: 6
-# Explanation: Each pair in the array are good.
-
-
-
 def numIdenticalPairs(nums):
-    result = []
-    lis1 = []
+    prs = []
     for i in range(0,len(nums)):
-        if nums[i] in nums[i+1:len(nums)]:
-            # lst2 = []
-            # for k in i:
-            #     if nums[i] in nums[i+1:len(nums)]:
-            #         print(i)
-            pass
-
-
-
-
-
+        prs2 =[]
+        for k in nums:
+            if k == nums[i]:
+                x = k,nums[i]
+            prs2.append(x)
+        prs.append(prs2)
+    print(prs)
 
 print(numIdenticalPairs(nums))
 
@@ -59,4 +56,4 @@ print(numIdenticalPairs(nums))
 
 
 
-# print(nums[i],nums[i+1:len(nums)])               
+         

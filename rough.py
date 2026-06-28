@@ -173,4 +173,19 @@
 
 #     print(result)
 
+# num = [1,4,6]
 
+
+# mul = 1
+# for i in num:
+#     mul = mul*i
+
+# print(mul)
+
+num = [0,0]
+
+num2 = []
+
+for i in num:
+    num2.append(i)
+print(num2)

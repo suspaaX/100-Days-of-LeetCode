@@ -18,8 +18,10 @@ def countCharacters(words,chars):
     #         sum_lengths.append(words[i])
     # print(sum_lengths)
     for i in words:
-        for k in i:
-            print(k,chars)
+
+        print(i,chars)
+
+    
 
 
 

@@ -20,26 +20,33 @@ Example 2:
 Input: s = "", t = "y"
 Output: "y"
 '''
-# s = "abcd"
-# t = "abcde"
-# Output =  "e"
+
+
+s = "abcd"
+t = "abcde"
+Output =  "e"
 
 s= ""
 t = "y"
-Output = "y"
+Output = "y"    
 
-# s = "a"
-# t = "aa"
-# Output = "a"
-
-# s = "ae"
-
-# t = "aea"
-
-# output = "a"
+s = 'a'
+t = 'aa'
 
 
 def findTheDifference(s,t):
+    ltr1 = []
+
+    for i in t:
+        if i not in s:
+            ltr1.append(i)
+    return ltr1[0]
+
+    else:
+        return s
+
     
+    # print(ltr)
+
 
 print(findTheDifference(s ,t))

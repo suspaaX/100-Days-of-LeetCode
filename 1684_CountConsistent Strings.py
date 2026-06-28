@@ -29,18 +29,45 @@ words = ["cc","acd","b","ba","bac","bad","ac","d"]
 Output: 4
 
 
+allowed = "ab"
+words = ["ad","bd","aaab","baa","badab"]
+Output: 2
+# allowed = "abc"
+# words = ["a","b","c","ab","ac","bc","abc"]
+# Output: 7
+
 def countConsistentStrings(allowed, words):
-    char = []
-    for i in allowed:
-        char.append(i)
-    print(char)
+    num = 0
+    for i in words:
+        if set(i).issubset(set(allowed)):
+            num = num+1
 
-    # for char 
+    return num
 
-
-
-
-
-
+            
 
 print(countConsistentStrings(allowed, words))
+
+
+        # prs2 = []
+        # for i in words:
+        #     x2 = [k for k in i]
+        #     prs2.append(x2)
+
+        # lst1 = []
+        # for k in prs2:
+        #     if set(k).issubset(set(allowed)):
+        #         lst1.append(k)
+        # return len(lst1)     
+        # 
+
+
+
+    # prs2 = []
+    # for i in words:
+    #     if set(i).issubset(set(allowed)):
+    #         num = num+1
+    #         # prs2.append(i)
+
+    # return len(prs2)  
+                

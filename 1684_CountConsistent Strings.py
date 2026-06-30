@@ -37,18 +37,17 @@ Output: 2
 # Output: 7
 
 def countConsistentStrings(allowed, words):
-    num = 0
+    prs2 = []
     for i in words:
         if set(i).issubset(set(allowed)):
-            num = num+1
+            prs2.append(i)
 
-    return num
-
+    return len(prs2)  
             
 
 print(countConsistentStrings(allowed, words))
 
-
+'method1'
         # prs2 = []
         # for i in words:
         #     x2 = [k for k in i]
@@ -62,12 +61,12 @@ print(countConsistentStrings(allowed, words))
         # 
 
 
-
-    # prs2 = []
+'method2'
+    # num = 0
     # for i in words:
     #     if set(i).issubset(set(allowed)):
     #         num = num+1
-    #         # prs2.append(i)
 
-    # return len(prs2)  
+    # return num
+
                 

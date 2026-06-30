@@ -182,10 +182,18 @@
 
 # print(mul)
 
-num = [0,0]
+# num = [0,0]
 
-num2 = []
+# num2 = []
 
-for i in num:
-    num2.append(i)
-print(num2)
+# for i in num:
+#     num2.append(i)
+# print(num2)
+
+val = 'kk'
+k = 'aaabbkk'
+
+for lm in k:
+    if val in k:
+        print('yes')
+        break

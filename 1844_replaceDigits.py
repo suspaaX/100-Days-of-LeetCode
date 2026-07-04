@@ -45,10 +45,27 @@ Output =  "abcdef"
 # Output =  "abbdcfdhe"
 
 def replaceDigits(s):
-    for k in range(97,123):
-        for i,j in enumerate(s):
-            if i%2 != 0:
-                print(s[i])
+    lst = []
+    l45 = []
+    for k in range(0,len(s)):
+        if k%2 != 0:
+            lst.append(k)
+        for m in s:
+            x = s[k:k+2]
+            l45.append(x)
+
+    ltr2 = []
+    letters = "abcdefghijklmnopqrstuvwxyz"
+    for i in range(0,len(letters)):
+        if i in lst:
+            ltr2.append(letters[i])
+
+
+    print(l45)
+
+
+
+
 
 
 print(replaceDigits(s))

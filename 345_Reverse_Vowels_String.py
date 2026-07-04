@@ -32,11 +32,7 @@ Output = "AceCreIm"
 
 
 def reverseVowels(s):
-    lst1 = ['a','e','i','o','u']
-    for i in range(0,len(s)):
-        if lst1 in s:
-            pass
-        
+    
 
 
 

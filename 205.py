@@ -66,24 +66,9 @@ Output: True
 
 def isIsomorphic(s,t) :
     dict1 = {}
-    list1 = []
-    list2 = []
     for i,j in zip(s,t):
         dict1.update({i:j})
-        list1.append(j)
-
-    for values in dict1.values():
-        print(values)
-        list2.append(values)
-    
-    print(list1,list2)
-
-    # if len(list1) == len(list2):
-    #     return True
-    
-    # else:
-    #     return False
-
+    print(dict1)
 
 print(isIsomorphic(s,t))
         

@@ -38,8 +38,20 @@ Output = True
 
 
 def isHappy(n) :
-    while = 0,12
-    for i in str(n):
-        sum = 
-    
-isHappy(n)        
+    # count = 1
+    # while len(str(n)) ==1:
+    # n2 = str(n)
+    # for i in range(0,len(n2)):
+    #     k = ()
+    # n =1
+    # while n<= 10:
+    #     print(n)
+    #     n = n+1
+
+    for 
+        
+
+
+
+
+print(isHappy(n))       

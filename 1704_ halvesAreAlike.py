@@ -38,11 +38,10 @@ def halvesAreAlike(s) :
     vowel =  ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
     
     half = int(len(s)/2)
-    print(half)
 
     x = s[0:half]
     x2 = s[half:len(s)]
-    print(x,x2)
+
 
     lst1 = []
     for k1 in vowel:
@@ -52,7 +51,7 @@ def halvesAreAlike(s) :
 
     lst2 = []
     for k2 in vowel:
-        # print(k2,x2)
+
         if k2 in x2:
             ct2 = x2.count(k2)
             lst2.append(ct2)

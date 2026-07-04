@@ -34,19 +34,9 @@ Output =  2
 # Since 2 has only one digit, return it.
 
 def addDigits(num):
-    str1 = str(num)
+    count = 1
+    while len(sum1) == 1
 
-    if len(str1) == 1:
-        return num
-    
-
-    num = int()
-    while (len(str(num))) != 1:
-        # if len(str1) >  1:
-            for i in str1:
-                num = num+int(i)
-
-            
 
 
 print(addDigits(num))    

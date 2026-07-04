@@ -5,11 +5,12 @@ Output =  "the cat was rat by the bat"
 
 
 def replaceWords(dictionary, sentence) :
-    x = sentence.split(' ')
-    for word in x:
-        print(word,dictionary)
-        # if word[0:4] in dictionary[0:len(dictionary)]:
-        #     print('yes')
+    lst = []
+    for k in sentence.split():
+        # print(k,dictionary)
+        if k[0:4] in dictionary:
+            lst.append(k)
+    print(lst)
 
 
 replaceWords(dictionary, sentence)

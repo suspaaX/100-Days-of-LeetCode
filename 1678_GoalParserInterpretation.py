@@ -36,37 +36,32 @@ Output: "alGalooG"
 command = "G()()()()(al)"
 Output =  "Gooooal"
 
-# command = "(al)G(al)()()G"
-# Output =  "alGalooG"
+command = "(al)G(al)()()G"
+Output =  "alGalooG"
+
+
+# command = 'G'
+# Output = 'G'
+
+# command = '()G'
+# Output = ''
 
 # command = "G()(al)"
 # Output =  "Goal"
-
-command = 'G'
-Output = 'G'
-
-command = '()G'
-Output = ''
-
 def interpret(command):
-    str0 = 'G'
-    str1 = '()'
-    str2 = '(al)'
 
-    dict1 = {
-    'G':'G',
-    '()':'o',
-    '(al)':'al',  
-    }
+    i = 'G'
+    j = '()'
+    k = '(al)'
+
+    str1 = ''
+    if i and  j and k in command:
+        x = i.replace(i,'G')
+        y = i.replace(i,'o')
+        z = j.replace(j,'al')
+        str1 = str1+x+y+z
     
-    ltr = ''
-    x = dict1.keys()
-    if  x in command:
-        print(dict1.values())
-
-
-
-
+    return str1
 
 
 print(interpret(command))

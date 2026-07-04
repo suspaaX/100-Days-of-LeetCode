@@ -190,10 +190,27 @@
 #     num2.append(i)
 # print(num2)
 
-val = 'kk'
-k = 'aaabbkk'
+# val = 'aa'
+# k = 'aaa'
 
-for lm in k:
-    if val in k:
-        print('yes')
-        break
+
+# if val in k:
+#     print('yes')
+    
+
+
+# letters = "abcdefghijklmnopqrstuvwxyz"
+# for i in range(1,len(letters)+1):
+#     k = letters[5]
+
+# print(k)
+
+
+
+x = [2,5,7]
+
+mul = 1
+for k in x:
+    mul = mul*k
+
+print(mul)

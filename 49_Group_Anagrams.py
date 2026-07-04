@@ -33,12 +33,15 @@ strs = ["eat","tea","tan","ate","nat","bat"]
 Output =  [["bat"],["nat","tan"],["ate","eat","tea"]]
 
 
-def groupAnagrams(strs) :
-    lst = []
-    for i in range(0,len(strs)):
-        print(strs[i],strs[i+1])
-        # if set(strs[i]).issubset(set(strs[i+1])):
-        #     print(strs[i])
+def groupAnagrams(strs) :   
+    for k in strs:
+        lst = []
+        for i in strs:
+            if k in strs:
+                lst.append(k)
+
+    print(lst)
+
 
 
 groupAnagrams(strs) 

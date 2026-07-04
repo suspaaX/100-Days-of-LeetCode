@@ -29,25 +29,31 @@ Output: 0
 '''
 
 
-# nums = [1,1,1,1]
-# Output: 6
+nums = [1,1,1,1]
+Output: 6
 # Explanation: Each pair in the array are good.
 
-nums = [1,2,3]
-Output: 0
+# nums = [1,2,3]
+# Output: 0
 
-nums = [1,2,3,1,1,3]
-Output: 4
+# nums = [1,2,3,1,1,3]
+# Output: 4
 
 def numIdenticalPairs(nums):
     lst2 = []
     for i in range(0,len(nums)):
-        lst = []
-        for k in nums:
-            for m in nums[i+1:len(nums)]:
-                x = (k,m)
-            lst.append(x)
-        print(lst)
+        # print(nums[i],nums[i:len(nums)])
+        for k in nums[i+1:len(nums)]:
+            x = (nums[i],k)
+            
+            lst2.append(x)
+
+    result = []
+    for k in lst2:
+        if k[0] == k[1]:
+            result.append(k)
+
+    return len(result)
 
 
 

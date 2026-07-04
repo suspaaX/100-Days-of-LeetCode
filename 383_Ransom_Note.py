@@ -41,33 +41,29 @@ Output =  True
 # Output: False
 
 
-
 # ransomNote = "a"
 # magazine = "b"
 # Output: False
 
-ransomNote = "abaa"
-magazine = "baaa"
-Output: True
+# ransomNote = "abaa"
+# magazine = "baaa"
+# Output: True
+
+# ransomNote = "aa"
+# magazine = "ab"
+# Output: False
+
 
 def canConstruct(ransomNote, magazine):
-    list1 = []
-    for i in range(0,len(ransomNote)):
-        if i%2 == 0:
-            list1.append(ransomNote[i:i+2])
-        elif i%2 != 0 :
-            list1.append(ransomNote[i:i+2])
-
-    print(list1)
+    k = list(ransomNote)
+    k.sort()
+    l = list(magazine)
+    l.sort()
     
-    for k in list1:
-        # print(k,magazine)
-        if k in magazine:
-            return True
-    else:
+    if set(l).issubset(set(k)):
+        return True
+    else :
         return False
-
-
 
 
 

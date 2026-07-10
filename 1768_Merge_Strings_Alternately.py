@@ -35,7 +35,7 @@ merged: a p b q c   d
 
 
 word1 = "abcd"
-word2 = "pq00"
+word2 = "pq"
 Output =  "apbqcd"
 
 # word1:  a   b   c   d
@@ -47,18 +47,33 @@ Output =  "apbqcd"
 # word2 = "pqr"
 # Output =  "apbqcr"
 
+word1 = 'ab' 
+word2 = 'pqrs'
+merged = 'apbqrs'
+
 
 def mergeAlternately(word1,word2):
-    str1 = ''
-    rslt = []
-    for i,j in zip(word1,word2):
-        k = i+j
-        str1 = str1+k
-        if '0' in str1:
-            x = str1.replace('0','')
-    return x
-    # else:
-    #     return str1
-        
+    merged_string = ''
+    if len(word1) == len(word2):
+        for i,j in zip(word1,word2):
+            merged_string = merged_string+i+j
 
+    elif len(word1)>len(word2):
+        result2 = word2.ljust(len(word1),'0')
+        for i,j in zip(word1,result2):
+            merged_string = merged_string+i+j
+        x = merged_string.replace('0','')
+        return x
+
+
+
+    elif len(word1)<len(word2):
+        result1 = word1.ljust(len(word2),'0')
+        for i,j in zip(result1,word2):
+            merged_string = merged_string+i+j
+        y = merged_string.replace('0','')
+        return y
+
+    return(merged_string)
+        
 print(mergeAlternately(word1,word2))

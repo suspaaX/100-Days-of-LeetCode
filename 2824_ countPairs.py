@@ -51,9 +51,6 @@ def countPairs(nums,target):
             if sum(x) < target:
                 lst.append(x)
 
-    # number_of_pairs = [i for i in lst if sum(i)<target]
-
-    # return len(number_of_pairs)
     return len(lst)
 
 print((countPairs(nums,target)))

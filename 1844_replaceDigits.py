@@ -40,33 +40,81 @@ Explanation: The digits are replaced as follows:
 
 s = "a1c1e1"
 Output =  "abcdef"
+# print(len(Output))
 
 # s = "a1b2c3d4e"
 # Output =  "abbdcfdhe"
+# print(len(Output))
+
+s = "v0g6s4d"
+Output =  "vvgmswd"
+# print(Output)
+
 
 def replaceDigits(s):
     lst = []
-    l45 = []
-    for k in range(0,len(s)):
-        if k%2 != 0:
-            lst.append(k)
-        for m in s:
-            x = s[k:k+2]
-            l45.append(x)
-
-    ltr2 = []
-    letters = "abcdefghijklmnopqrstuvwxyz"
-    for i in range(0,len(letters)):
-        if i in lst:
-            ltr2.append(letters[i])
-
-
-    print(l45)
-
-
-
+    for i in range(0,len(s)):
+        for k in s[i+1:len(s)]:
+            print(k)
+        # print(m)
 
 
 
 print(replaceDigits(s))
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''    idx = []
+    lst1 = []
+    ch = str()
+    for i in range(0,len(s)):
+        if i%2 != 0:
+            idx.append(i)
+        elif i%2 == 0:
+            lst1.append(s[i])
+
+    lst2 = []
+    l = 'abcdefghijklmnopqrstuvwxyz'   
+    for i in range(0,len(l)):
+        for k in idx:
+            if k == i:
+                lst2.append(l[i])
+
+    if len(lst1) != len(lst2):
+        lst2.append(' ')
+    elif len(lst2) != len(lst1):
+        lst1.append(' ')
+        
+    for l1,l2 in zip(lst1,lst2):
+        ch = ch+l1+l2
+        x = ch.replace(' ','')
+  
+    return x
+'''

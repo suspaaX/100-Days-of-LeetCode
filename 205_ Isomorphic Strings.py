@@ -48,20 +48,20 @@ Output: true
 
 
 
-# s = "f11"
-# t = "b23"
+s = "f11"
+t = "b23"
 
-# Output: False
+Output: False
 
-s = "egg"
-t = "add"
+# s = "egg"
+# t = "add"
 
-Output: True 
+# Output: True 
 
-s = "paper"
-t = "title"
+# s = "paper"
+# t = "title"
 
-Output: True
+# Output: True
 
 
 def isIsomorphic(s,t) :

@@ -207,10 +207,28 @@
 
 
 
-x = [2,5,7]
+# x = [2,5,7]
 
-mul = 1
-for k in x:
-    mul = mul*k
+# mul = 1
+# for k in x:
+#     mul = mul*k
 
-print(mul)
+# print(mul)
+
+
+ops = ["5","2","C","D","+"]
+
+lst1 = []
+lst2 = []
+
+for i in ops:
+    if i == 'C' :
+        lst2.append(i)
+    elif i == 'D' :
+        lst2.append(i)
+    elif i == '+' :
+        lst2.append(i)
+    else:
+        k = int(i)
+        lst1.append(k)
+

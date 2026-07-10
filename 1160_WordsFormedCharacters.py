@@ -36,25 +36,46 @@ words = ["cat","bt","hat","tree"]
 chars = "atach"
 Output =  6
 
-# words = ["hello","world","leetcode"]
-# chars = "welldonehoneyr"
-# Output =  10
 
 
+# words = ["dyiclysmffuhibgfvapygkorkqllqlvokosagyelotobicwcmebnpznjbirzrzsrtzjxhsfpiwyfhzyonmuabtlwin",
+#          "ndqeyhhcquplmznwslewjzuyfgklssvkqxmqjpwhrshycmvrb",
+#          "ulrrbpspyudncdlbkxkrqpivfftrggemkpyjl",
+#          "boygirdlggnh",
+#          "xmqohbyqwagkjzpyawsydmdaattthmuvjbzwpyopyafphx",
+#          "nulvimegcsiwvhwuiyednoxpugfeimnnyeoczuzxgxbqjvegcxeqnjbwnbvowastqhojepisusvsidhqmszbrnynkyop",
+#          "hiefuovybkpgzygprmndrkyspoiyapdwkxebgsmodhzpx",
+#          "juldqdzeskpffaoqcyyxiqqowsalqumddcufhouhrskozhlmobiwzxnhdkidr",
+#          "lnnvsdcrvzfmrvurucrzlfyigcycffpiuoo",
+#          "oxgaskztzroxuntiwlfyufddl",
+#          "tfspedteabxatkaypitjfkhkkigdwdkctqbczcugripkgcyfezpuklfqfcsccboarbfbjfrkxp",
+#          "qnagrpfzlyrouolqquytwnwnsqnmuzphne",
+#          "eeilfdaookieawrrbvtnqfzcricvhpiv",
+#          "sisvsjzyrbdsjcwwygdnxcjhzhsxhpceqz",
+#          "yhouqhjevqxtecomahbwoptzlkyvjexhzcbccusbjjdgcfzlkoqwiwue",
+#          "hwxxighzvceaplsycajkhynkhzkwkouszwaiuzqcleyflqrxgjsvlegvupzqijbornbfwpefhxekgpuvgiyeudhncv",
+#          "cpwcjwgbcquirnsazumgjjcltitmeyfaudbnbqhflvecjsupjmgwfbjo","teyygdmmyadppuopvqdodaczob",
+#          "qaeowuwqsqffvibrtxnjnzvzuuonrkwpysyxvkijemmpdmtnqxwekbpfzs",
+#          "qqxpxpmemkldghbmbyxpkwgkaykaerhmwwjonrhcsubchs"]
 
+# chars = "usdruypficfbpfbivlrhutcgvyjenlxzeovdyjtgvvfdjzcmikjraspdfp"
+# Output = 0
+# print(len(chars))
+
+words = ["hello","world","leetcode"]
+chars = "welldonehoneyr"
+Output =  10
 def countCharacters(words,chars):
-    k2 = list(chars)
-    k2.sort()
-    rslt = []
-    for i in words:
-        k  = list(i)
-        if k.sort() in k2.sort():
-            rslt.append(k)
-    print(rslt)
-
-
-    
-
+    dict1 = {}
+    lst1 = []
+    for i in range(0,len(words)):
+        x = words[i]
+        for k in x:
+            if k == words[i]:
+                m = x.count(k)
+                dict1.update({k:m})
+                lst1.append(dict1)
+    print(dict1)
 
 
 print(countCharacters(words,chars))

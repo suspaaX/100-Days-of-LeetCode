@@ -68,20 +68,39 @@ Output = 30
 # "+" - Add 5 + 10 = 15 to the record, record is now [5, 10, 15].
 # The total sum is 5 + 10 + 15 = 30.
 
+'''
+
+An integer x.
+Record a new score of x.
+'+'.
+Record a new score that is the sum of the previous two scores.
+'D'.
+Record a new score that is the double of the previous score.
+'C'.
+Invalidate the previous score, removing it from the record.
+
+'''
+
 
 def calPoints(ops):
-    sum1 = []
-    sum2 = []
-    # dict1 = {
-    #     int(i): list().append(int(i)),
-    # }
+    dict1 = {}
+
+    lst1 = []
+    lst2 = []
+
     for i in ops:
-        if  i is int(i):
-            sum1.append(i)
-        elif i is str(i):
-            sum2.append(i)
-            
-    print(sum1,sum2)
+        if i == 'C' :
+            lst2.append(i)
+        elif i == 'D' :
+            lst2.append(i)
+        elif i == '+' :
+            lst2.append(i)
+        else:
+            k = int(i)
+            lst1.append(k)
+
+    for i in ops:
+        if i in 
 
 
-(calPoints(ops))
+print(calPoints(ops))

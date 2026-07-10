@@ -26,18 +26,14 @@ Output =  "ca"
 
 
 def removeDuplicates(s):
-    lst2 = [s]
     for i in s:
-        double = [2*i]
-
-    for i,j in enumerate(s):
-        if double[0] in s[0]:
-            s.remeove(double[0][i:i+1])
-        print(s)
-
-
-
-
+        k = 2*i
+        print(k,s)
+        if k in s[0:len(s)]:
+            m = s.replace(k,'')
+            if k in m:
+                n = m.replace(k,'')
+                return n
 
 
 

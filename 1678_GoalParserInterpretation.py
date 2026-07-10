@@ -46,23 +46,11 @@ Output =  "alGalooG"
 # command = '()G'
 # Output = ''
 
-# command = "G()(al)"
-# Output =  "Goal"
+command = "G()(al)"
+Output =  "Goal"
+
 def interpret(command):
-
-    i = 'G'
-    j = '()'
-    k = '(al)'
-
-    str1 = ''
-    if i and  j and k in command:
-        x = i.replace(i,'G')
-        y = i.replace(i,'o')
-        z = j.replace(j,'al')
-        str1 = str1+x+y+z
     
-    return str1
-
 
 print(interpret(command))
     

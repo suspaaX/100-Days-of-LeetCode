@@ -216,19 +216,74 @@
 # print(mul)
 
 
-ops = ["5","2","C","D","+"]
+# ops = ["5","2","C","D","+"]
 
-lst1 = []
-lst2 = []
+# lst1 = []
+# lst2 = []
 
-for i in ops:
-    if i == 'C' :
-        lst2.append(i)
-    elif i == 'D' :
-        lst2.append(i)
-    elif i == '+' :
-        lst2.append(i)
-    else:
-        k = int(i)
-        lst1.append(k)
+# for i in ops:
+#     if i == 'C' :
+#         lst2.append(i)
+#     elif i == 'D' :
+#         lst2.append(i)
+#     elif i == '+' :
+#         lst2.append(i)
+#     else:
+#         k = int(i)
+#         lst1.append(k)
 
+
+# scr = [9,8,6]
+
+# print(scr[-1],scr[-2])
+
+# scr = [9]
+# scr.pop(len(scr)-1)
+# print(scr)
+
+
+
+
+# m =scr[-1]*2
+# scr.append(m)
+
+# print(scr)
+
+
+# scr1 = [1,2]
+
+# # print(sum(scr1[-2],scr1[-1]))
+# # print(m)
+
+
+# print(scr1[-2]+scr1[-1])
+
+# s = "CDXC"
+# Output = 3490
+
+# lst1 = []
+# for i,j in enumerate(s):
+    # print(s[i-1])
+#     if j == 'M' :
+#         if s[i-1] == -1:
+#             m = s[i-1] + s[i]
+#             lst1.append(m)
+#             lst1.remove(s[i-1])
+#         else:
+#             lst1.append(j)
+#     else:
+#         lst1.append(j)
+
+    
+
+# print(lst1)
+
+
+
+
+m = '()'
+# print(len(m))
+
+k = m.replace('()','')
+print(k)
+# print(k)

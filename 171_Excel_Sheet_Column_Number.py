@@ -27,18 +27,27 @@ Input: columnTitle = "ZY"
 Output: 701
 '''
 
-# columnTitle = "AB"
-# Output: 28
+columnTitle = "AB"
+Output: 28
 
-columnTitle = "A"
+columnTitle = "W"
 Output: 1
 
 def titleToNumber(columnTitle):
-    s = 65
-    e = 91
+    result = 0
+    ltr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    for i,j in enumerate(ltr):
+        for k in columnTitle:
+            if len(columnTitle) == 1:
+                if k == j:
+                    return i+1
 
-    for i in columnTitle()
-             
+            elif len(columnTitle) > 1:
+                m =26*i+(i+1)
 
 
-titleToNumber(columnTitle)
+        
+
+    # return i+
+
+print(titleToNumber(columnTitle))

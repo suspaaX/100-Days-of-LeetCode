@@ -19,40 +19,42 @@ target = 6
 Output =  [1,2]
 
 
-nums = [3,2,3]
-target  = 6
-Output = [0,2]
+# nums = [3,2,4]
+# target  = 7
+# Output = [0,2]
 
-nums  = [2,7,11,15]
-target = 9
+
+nums = [3,3]
+target  = 6   
 Output = [0,1]
 
-# nums = [3,3]
-# target  = 6   
+# nums  = [2,7,11,15]
+# target = 9
 # Output = [0,1]
 
 def twoSum(nums,target) :
+
+
     lst1 = []
     for i in range(0,len(nums)):
         for k2 in nums[i+1:len(nums)]:
-            x = (nums[i],k2)
-            lst1.append(x)
+            x = [nums[i],k2]
+            if sum(x) == target:
+                lst1.append(x)
+
+    lst2 = []
+    for n in lst1[0]:
+        k = nums.index(n)
+        lst2.append(k)
+
+    return lst2
 
 
 
-    for sum1 in lst1:
-        if sum(sum1) == target:
-            correct = sum1
 
-    rst = []
-    rst2 = []
-    for k in correct:
-        if k in nums:
-            x = nums.index(k)
-            x2 = nums.index(k,1)
-    rst.append(x)
-    rst2.append(x2)
-    return rst,rst2
+
+
+
 
 
 print(twoSum(nums,target))

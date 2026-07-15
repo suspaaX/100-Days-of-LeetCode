@@ -62,9 +62,25 @@ n = 3
 Output =  [1,2,2,3,5,6]
 
 def merge(nums1,m,nums2,n) :
-    for i in nums2:
-        nums1.append(i)
-    print(nums1)
+    if m == 0:
+        return nums2
+
+    elif n == 0:
+        return nums1
+
+    elif m>1 and n>1:
+        nums2.extend(nums1)
+        nums1.sort()
+        for i in nums2:
+            if i == 0:
+                nums2.pop(i)
+
+        print(nums2)
+
+
+    # return nums1
+
+
 
 
 print(merge(nums1,m,nums2,n))

@@ -36,21 +36,34 @@ Output: "alGalooG"
 command = "G()()()()(al)"
 Output =  "Gooooal"
 
-command = "(al)G(al)()()G"
-Output =  "alGalooG"
+# command = "(al)G(al)()()G"
+# Output =  "alGalooG"
 
 
-# command = 'G'
-# Output = 'G'
+command = 'G'
+Output = 'G'
 
-# command = '()G'
-# Output = ''
+command = '()G'
+Output = ''
 
-command = "G()(al)"
-Output =  "Goal"
+# command = "G()(al)"
+# Output =  "Goal"
+
+command = "()()"
+Output =  "oo"
 
 def interpret(command):
-    
+
+    ltr = command
+
+    y = ltr.replace('()','o')
+    ltr = y
+
+    z = ltr.replace('(al)','al')
+    ltr = z
+
+
+    return ltr
 
 print(interpret(command))
     

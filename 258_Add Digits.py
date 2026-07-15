@@ -25,7 +25,7 @@ Output: 0
 num = 38
 Output =  2
 
-# num = 0
+# num = 10
 # Output: 0
 
 # Explanation: The process is
@@ -33,10 +33,31 @@ Output =  2
 # 11 --> 1 + 1 --> 2 
 # Since 2 has only one digit, return it.
 
+# num = 9
+# output = 9
+
 def addDigits(num):
-    count = 1
-    while len(sum1) == 1
 
+    # num1 = str(num)
+    
+    # if len(num1) != 1:
+    #     num2 = [int(i) for i in str(num)]
+    #     sum1 = sum(num2)
+    #     num = sum1
+        
+    # else:
+    #     return num
+    
+    # return sum1
+    count = 0
+    num1 = str(num)
+    while len(num1) ==  1:
+        num2 = [int(i) for i in str(num)]
+        sum1 = sum(num2)
+        sum1 = num
+        count = count+1
 
+    return num
+    
 
 print(addDigits(num))    

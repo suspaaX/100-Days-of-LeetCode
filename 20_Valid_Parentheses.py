@@ -50,23 +50,78 @@ Input: s = "([)]"
 Output: false
 
 '''
-s = "([])"
+s = "(]"
 
-Output = True
+Output = False
 
-# s = "()"
+# s = "([)]"
 
-# Output: True
+# Output: False
 
 # s = "([)]"
 
 # Output =  False
 
+# s = "(){}"
+
+# Output = True
+
+# s = "(]"
+
+# Output = False
+# s = "([])"
+
+# s = "()"
+
+# Output: True
+
+# s = "()[]"
+
+# Output = True
+
+# s = "{}"
+
+# Output = True
+
+
+# s = "([])"
+
+# Output: True
+
+
+s = "([])"
+
+Output: True
+
+# s = "()"
+
+# Output: True
+
 
 def isValid(s):
-    for i in range(0,len(s)):
-        print(i)
 
-      
+    s1 = s[:]
+    wd = str()
+
+    if  '()' in s1:
+        k = s1.replace('()','')
+        wd = wd+k
+
+    if  '[]' in s1:
+        n = s1.replace('[]','')
+        wd = wd+n
+
+    if  '{}' in s1:
+        o = s1.replace('{}','')
+        wd = wd+o
+
+        
+
+    if len(wd) == 0:
+        return True
+    else:
+        return False
+
+
 
 print(isValid(s))

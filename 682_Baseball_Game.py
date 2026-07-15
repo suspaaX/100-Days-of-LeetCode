@@ -58,8 +58,6 @@ Since the record is empty, the total sum is 0.
 
 '''
 
-ops = ["5","2","C","D","+"]
-Output = 30
 
 # "5" - Add 5 to the record, record is now [5].
 # "2" - Add 2 to the record, record is now [5, 2].
@@ -81,26 +79,30 @@ Invalidate the previous score, removing it from the record.
 
 '''
 
+ops = ["5","2","C","D","+"]
+Output = 30
+
+ops = ["1","C"]
+Output = 0
+
+# ops = ["5","-2","4","C","D","9","+","+"]
+# Output = 27
 
 def calPoints(ops):
-    dict1 = {}
-
-    lst1 = []
-    lst2 = []
-
+    score = []
     for i in ops:
-        if i == 'C' :
-            lst2.append(i)
-        elif i == 'D' :
-            lst2.append(i)
-        elif i == '+' :
-            lst2.append(i)
-        else:
-            k = int(i)
-            lst1.append(k)
+        if i != 'C' and i !='D' and i!='+':
+            score.append(int(i))
 
-    for i in ops:
-        if i in 
+        elif i == 'C':
+            score.pop()
 
+        elif i == 'D':
+            score.append(score[-1]*2)
+
+        elif i == '+':
+            score.append((score[-2]+score[-1]))
+
+    return sum(score)
 
 print(calPoints(ops))

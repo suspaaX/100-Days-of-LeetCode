@@ -43,35 +43,121 @@ Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 '''
 
+
+
+
+s = "III"
+Output =  3
+
 # s = "LVIII"
 # Output =  58
-
 
 s = "MCMXCIV"
 Output =  1994
 
-# s = "III"
-# Output =  3
+# s = "MCDLXXVI"
+# Output = 1476
+
+
+# s = "MCMXCIV"
+# Output = 1994
+
+# s = "MMMCDXC"
+# Output = 3490
 
 
 def romanToInt(s) :
-    result = 0
+
+    result = 0    
+    lst1 = []
+
     dict1 = {
+
                 'I':1,
                 'V':5,
                 'X':10,
-                'L':50,
+                'L':50, 
                 'C':100,
                 'D':500,
-                'M':1000
+                'M':1000,
+                'IV':4,
+                'IX':9,
+                'XL':40,
+                'XC':90,
+                'CD':400,
+                'CM':900,
+
             }
-    
-    for ltr in s:
-        val = dict1.get(ltr)
-        print(val)
-        result = result+val
-    print(result)
+
+    for i,j in enumerate(s):
+
+        if j == 'V':
+            if (s[i-1]) == 'I':
+                m = s[i-1] + s[i]
+                lst1.append(m)
+                lst1.remove(s[i-1])
+            else:
+                lst1.append(j)
+
+        elif j == 'X':
+            if (s[i-1]) == 'I':
+                m = s[i-1] + s[i]
+                lst1.append(m)
+                lst1.remove(s[i-1])
+            else:
+                lst1.append(j)
+
+        elif j == 'L':
+            if (s[i-1]) == 'X':
+                m = s[i-1] + s[i]
+                lst1.append(m)
+                lst1.remove(s[i-1])
+            else:
+                lst1.append(j)
+
+        elif j == 'C':
+            if (s[i-1]) == 'X':
+                m = s[i-1] + s[i]
+                lst1.append(m)
+                lst1.remove(s[i-1])
+            else:
+                lst1.append(j)
+
+        elif j == 'D':
+            if (s[i-1]) == 'C':
+                m = s[i-1] + s[i]
+                lst1.append(m)
+                lst1.remove(s[i-1])
+            else:
+                lst1.append(j)
 
 
+        elif j == 'M':
+            if  s[i-1] != 'X' and  s[i-1] != 'I' :
+                lst1.append(j)
+            else:
+              lst1.append(j)
 
-romanToInt(s) 
+        elif j == 'M':
+            if (s[i-1]) == 'C':
+                m = s[i-1] + s[i]
+                lst1.append(m)
+                lst1.remove(s[i-1])
+            else:
+                lst1.append(j)
+
+            
+
+        else:
+            lst1.append(j)
+
+    print(lst1)
+
+    for k in lst1:
+        if k in dict1:
+            m = dict1.get(k)
+            result = result + m
+
+    return result 
+
+print(romanToInt(s)) 

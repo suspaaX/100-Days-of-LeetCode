@@ -19,22 +19,32 @@ Example 2:
 
 Input: s = "azxxzy"
 Output: "ay"
-'''
 
-s = "abbaca"
+'''
+s = "azxxzy"
+Output =  "ay"
+
+# s = "abbaca"
+# Output =  "ca"
+
+s = "bbaacaab"
 Output =  "ca"
 
-
 def removeDuplicates(s):
+        
+    ltr = s
+
     for i in s:
-        k = 2*i
-        print(k,s)
-        if k in s[0:len(s)]:
+        k = i*2
+        
+        if k in s:
             m = s.replace(k,'')
-            if k in m:
-                n = m.replace(k,'')
-                return n
+            return m
 
+        if k in m:
+            j = m.replace(k,'')
+            ltr = j
 
+    return ltr
 
 print(removeDuplicates(s))

@@ -52,22 +52,21 @@ Output =  3
 # s = "LVIII"
 # Output =  58
 
-s = "MCMXCIV"
-Output =  1994
+# s = "MCMXCIV"
+# Output =  1994
 
 # s = "MCDLXXVI"
 # Output = 1476
 
 
-# s = "MCMXCIV"
-# Output = 1994
+s = "MCMXCIV"
+Output = 1994
 
-# s = "MMMCDXC"
-# Output = 3490
+s = "MMMCDXC"
+Output = 3490
 
 
 def romanToInt(s) :
-
     result = 0    
     lst1 = []
 
@@ -76,7 +75,7 @@ def romanToInt(s) :
                 'I':1,
                 'V':5,
                 'X':10,
-                'L':50, 
+                'L':50,
                 'C':100,
                 'D':500,
                 'M':1000,
@@ -91,11 +90,15 @@ def romanToInt(s) :
 
     for i,j in enumerate(s):
 
-        if j == 'V':
+        if j == 'M':
+            s[i] == 0
+            lst1.append(j)
+
+        elif j == 'V':
             if (s[i-1]) == 'I':
                 m = s[i-1] + s[i]
                 lst1.append(m)
-                lst1.remove(s[i-1])
+                # lst1.remove(s[i-1])
             else:
                 lst1.append(j)
 
@@ -103,7 +106,7 @@ def romanToInt(s) :
             if (s[i-1]) == 'I':
                 m = s[i-1] + s[i]
                 lst1.append(m)
-                lst1.remove(s[i-1])
+                # lst1.remove(s[i-1])
             else:
                 lst1.append(j)
 
@@ -111,15 +114,15 @@ def romanToInt(s) :
             if (s[i-1]) == 'X':
                 m = s[i-1] + s[i]
                 lst1.append(m)
-                lst1.remove(s[i-1])
+                # lst1.remove(s[i-1])
             else:
                 lst1.append(j)
 
         elif j == 'C':
-            if (s[i-1]) == 'X':
+            if (s[i-1]) == 'X' :
                 m = s[i-1] + s[i]
                 lst1.append(m)
-                lst1.remove(s[i-1])
+                # lst1.remove(s[i-1])
             else:
                 lst1.append(j)
 
@@ -127,31 +130,22 @@ def romanToInt(s) :
             if (s[i-1]) == 'C':
                 m = s[i-1] + s[i]
                 lst1.append(m)
-                lst1.remove(s[i-1])
+                # lst1.remove(s[i-1])
             else:
                 lst1.append(j)
-
 
         elif j == 'M':
-            if  s[i-1] != 'X' and  s[i-1] != 'I' :
-                lst1.append(j)
-            else:
-              lst1.append(j)
-
-        elif j == 'M':
-            if (s[i-1]) == 'C':
-                m = s[i-1] + s[i]
-                lst1.append(m)
-                lst1.remove(s[i-1])
-            else:
+            if (s[i-1]) != 'C':
                 lst1.append(j)
 
-            
+            else:
+                lst1.append(j)
 
         else:
             lst1.append(j)
 
     print(lst1)
+
 
     for k in lst1:
         if k in dict1:

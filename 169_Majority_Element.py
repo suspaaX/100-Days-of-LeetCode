@@ -20,19 +20,31 @@ Output: 2
 nums =[3,3,4]
 Output =  3
 
-# nums = [3,2,3]
-# Output = 3
+nums = [3,2,3]
+Output = 3
 
-nums = [2,2,1,1,1,2,2,1,1]
-Output =  2
+# nums = [2,2,1,1,1,2,2]
+# Output =  2
 
 
 def majorityElement(nums) :
-    for i in range(0,len(nums)):
-        for k in nums:
-            pass
+    nums1 = set(nums)
+    n = len(nums)/2
+    dict1 = {}
+    lst = []
+    for k in nums1:
+        l = nums.count(k)
+        dict1.update({k:l})
+
+    for i,j in dict1.items():
+        if j >= n:
+            lst.append(i)
+        
+    return lst[0]
+    
 
 
 
 
+    
 print(majorityElement(nums))

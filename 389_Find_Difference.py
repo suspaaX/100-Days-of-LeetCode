@@ -26,27 +26,37 @@ s = "abcd"
 t = "abcde"
 Output =  "e"
 
-s= ""
-t = "y"
-Output = "y"    
+# s= ""
+# t = "y"
+# Output = "y"    
 
 s = 'a'
 t = 'aa'
 
+Output = "a"   
+
 
 def findTheDifference(s,t):
-    ltr1 = []
+
+    str1 = ''
+    dict1 = {}
+    dict2 = {}
+
+    for i in s:
+        k = s.count(i)
+        dict1.update({i:k})
 
     for i in t:
-        if i not in s:
-            ltr1.append(i)
-    return ltr1[0]
+        m = t.count(i)
+        dict2.update({i:m})
 
-    else:
-        return s
+    for i,j in dict2.items():
+        if i not in dict1:
+            str1 = str1+i
+            return str1
 
+        elif i in dict1 and j>dict1.get(i):
+            str1 = str1+i
+            return str1
     
-    # print(ltr)
-
-
 print(findTheDifference(s ,t))

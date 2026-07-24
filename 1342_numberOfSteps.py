@@ -51,19 +51,8 @@ Output: 6
 
 
 def numberOfSteps(num):
-    step = 0
-    if num%2 == 0 :
-        x == 0
-        if x != 0:
-            x = num/2 
-        elif 
+    pass
 
-    elif num%2 != 0:
-        x = (num-1)/2
-        num2 = num2+x
-        step = step+1
-
-    return step
 
 
 

@@ -51,24 +51,79 @@ Output: true
 s = "f11"
 t = "b23"
 
-Output: False
+# Output: False
 
-# s = "egg"
-# t = "add"
+s = "egg"
+t = "add"
 
-# Output: True 
+Output: True 
 
-# s = "paper"
-# t = "title"
+s = "paper"
+t = "title"
+
+Output: True
+
+
+
+
+s = "a"
+t = "a"
+
+Output: True
+
+
+
+# s = "ab"
+# t = "ab"
 
 # Output: True
 
+# s = "badc"
+# t = "baba"
+
+# Output: False
+
+
+# s = "ab"
+# t = "aa"
+
+# Output: False
 
 def isIsomorphic(s,t) :
-    dict1 = {}
-    for i,j in zip(s,t):
-        dict1.update({i:j})
-    print(dict1)
+
+
+    if len(set(s)) == len(set(t)):
+        return True
+    
+    elif len(s) > 2 and len(t) > 2:
+
+        dict1 = {}
+        for i,j in zip((s),(t)):
+            dict1.update({i:j})
+        # print(dict1)
+
+        new_wd = ''
+        for i in s:
+            # print(i,dict1)
+            val = dict1.get(i)
+            if i in dict1 and val not in i:
+                new_wd = new_wd+val
+
+            # elif i in dict1 :
+            #     new_wd = new_wd+val
+
+        print(new_wd)
+
+        if new_wd == t:
+            return True
+        else:
+            return False
+
+    else:
+        return False
+
+
+
 
 print(isIsomorphic(s,t))
         

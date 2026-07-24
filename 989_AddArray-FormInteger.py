@@ -47,26 +47,16 @@ Output = [1,2,3,4]
 # Explanation: 1200 + 34 = 1234
 
 def addToArrayForm(num,k) :
-    # str1 = str()
-    # array_form = []
-    # for i in num:
-    #     str1 = str1 + str(i)
-        
-    # sum1 = int(str1)+k
-    
-    # for char in str(sum1):
-    #     array_form.append(int(char))
 
-    # return array_form
+    num1 = str(num)
+    set1 = set(num)
+    numstr1 = str(set1)
+    print(numstr1)
 
-    ln = len(num)
+    nums = ''
+    for i in range(0,len(num)):
+        pass
 
-    if len(num) != len(str(k)):
-        x = (f"{k:0{ln}d}") 
-        return x
-    
-
-    
 
 
 

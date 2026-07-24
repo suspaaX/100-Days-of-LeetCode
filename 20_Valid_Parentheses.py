@@ -100,27 +100,14 @@ Output: True
 
 def isValid(s):
 
-    s1 = s[:]
-    wd = str()
-
-    if  '()' in s1:
-        k = s1.replace('()','')
-        wd = wd+k
-
-    if  '[]' in s1:
-        n = s1.replace('[]','')
-        wd = wd+n
-
-    if  '{}' in s1:
-        o = s1.replace('{}','')
-        wd = wd+o
-
-        
-
-    if len(wd) == 0:
+    if '()' in s:
+        return True
+    if '[]' in s:
         return True
     else:
         return False
+
+
 
 
 

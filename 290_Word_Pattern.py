@@ -37,10 +37,6 @@ Output: false
 
 
 
-pattern = "abba"
-s = "dog cat cat dog"
-
-Output =  True
 
 # Explanation:
 
@@ -54,18 +50,56 @@ s = "dog cat cat fish"
 
 Output =  False
 
-pattern = "aaaa"
-s = "dog cat cat dog"
+# pattern = "aaaa"
+# s = "dog cat cat dog"
 
-Output = False
+# Output = False
 
 # pattern = "aba"
 # s ="cat cat cat dog"       
 # Output = False
 
+# pattern = "aba"
+# s = "dog cat cat"    
+# Output = False
+
+pattern = "abba"
+s = "dog cat cat dog"
+Output =  True
+
+# pattern = "abc"
+# s = "b c a"
+# Output =  True
+
 
 def wordPattern(pattern, s) :
-    pass 
+    ssplt = s.split()
 
-print(wordPattern(pattern, s))
+    dict1 = {}
+
+    for i,j in zip(pattern,ssplt):
+        dict1.update({i:j})
+
+    print(dict1)
+
+    slst1 = []
+    for i in ssplt:
+        print(i,dict1.values())
+        if i in dict1.values():
+            slst1.append(i)
+    print(slst1,ssplt)
+
+    
+    sresult = ''
+    for i in slst1:
+        sresult = sresult+i
+    print(pattern,sresult)
+
+    if pattern == sresult:
+        return True
+    else:
+        return False
+
+
+(wordPattern(pattern, s))
         

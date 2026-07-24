@@ -29,9 +29,9 @@ s = "aa"
 goal = "aa"
 Output: True
 
-s = "ab"
-goal = "ab"
-Output: False
+# s = "ab"
+# goal = "ab"
+# Output: False
 
 s = "aaaaaaabc"
 goal = "aaaaaaacb"
@@ -42,11 +42,28 @@ Output: True
 # Output: True
 
 def buddyStrings(s, goal):
-    rever = s[::-1]
+    s1 = []
+    for i,j in enumerate(s):
+        print(s[7],s[6])
+    #     if s[i+1] == s[i]:
+    #         k = s.replace(s[i+1],'')
+    #         s1.append(k)
+    # print(s1)
+    
 
-    if rever == goal[0:len(goal)]:
-        return True
-    else:
-        return False
+
+
+
+    # rever = s[::-1]
+    # if rever == goal[0:len(goal)]:
+    #     return True
+    # else:
+    #     return False
+    
+
+        
+
+
+
 
 print(buddyStrings(s, goal))   

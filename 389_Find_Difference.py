@@ -30,23 +30,26 @@ Output =  "e"
 # t = "y"
 # Output = "y"    
 
-s = 'a'
-t = 'aa'
+# s = 'a'
+# t = 'aa'
 
-Output = "a"   
+# Output = "a"   
 
 
 def findTheDifference(s,t):
+
+    s1 = set(s)
+    t1 = set(t)
 
     str1 = ''
     dict1 = {}
     dict2 = {}
 
-    for i in s:
+    for i in s1:
         k = s.count(i)
         dict1.update({i:k})
 
-    for i in t:
+    for i in t1:
         m = t.count(i)
         dict2.update({i:m})
 

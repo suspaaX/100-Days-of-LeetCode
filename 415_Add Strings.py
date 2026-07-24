@@ -33,29 +33,22 @@ Output: "533"
 # num2 = "123"
 # Output: "234"
 
+num1 = "45" 
+num2 = "771"
+Output: "533"
 
 
 
 def addStrings(num1, num2):
-    sum = ''
-    # print(len(num1),len(num2))
+    if len(num1) > len(num2):
+        nw_num2 = num2.zfill(len(num1))
+        x = (nw_num2,num1)
 
-    if len(num1) ==  len(num2):
-
-
-
-
-
-    # for i,j in zip(num1,num2):
-    #     result = (str(num1[-1]))+(str(num2[-1]))
-    #     sum = sum+str(result)
-    # return sum
-
-
-
-
-
+    elif len(num1) < len(num2):
+        nw_num1 =  num1.zfill(len(num2))
+        y = (nw_num1,num2)
     
+    print(y)
 
 
 

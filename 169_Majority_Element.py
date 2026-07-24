@@ -42,9 +42,5 @@ def majorityElement(nums) :
         
     return lst[0]
     
-
-
-
-
     
 print(majorityElement(nums))

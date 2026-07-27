@@ -281,9 +281,41 @@
 
 
 
-m = '()'
-# print(len(m))
+# m = '()'
+# # print(len(m))
 
-k = m.replace('()','')
-print(k)
+# k = m.replace('()','')
 # print(k)
+# print(k)
+
+
+arr = [10,20,30,40,50]
+
+# for i in range(len(arr)):
+#     print(arr[i])
+
+# 0
+# 1
+# 2
+# 3
+# 4
+
+
+# for i in range(1, len(arr)):
+#     print(arr[i])
+# 1
+# 2
+# 3
+# 4
+
+# for i in range(len(arr)-1):
+#     print(arr[i],arr[i+1])
+
+# 0
+# 1
+# 2
+# 3
+dict1 = {}
+dict1["d"] = 1
+
+print(dict1)

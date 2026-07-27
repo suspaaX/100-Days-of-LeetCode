@@ -23,15 +23,19 @@ Input: nums = [1]
 Output: [0]
 Explanation: The array leftSum is [0] and the array rightSum is [0].
 The array answer is [|0 - 0|] = [0].
-'''
 
+
+'''
 nums = [10,4,8,3]
 Output =  [15,1,11,22]
 
-def leftRightDifference(nums):
-    left_sum = []
-    right_sum = []
-    for i in range(0,len(nums)):
-        left_sum
 
-print(leftRightDifference(nums))
+def leftRightDifference(nums) :
+    for i in range(0,len(nums)):
+        pass
+
+
+
+
+
+        

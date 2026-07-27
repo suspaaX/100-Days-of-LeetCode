@@ -41,21 +41,7 @@ Output =  [1,2]
 # Output = [1,2]
 
 def topKFrequent(nums,k) :
-    answer = []
-    dict1 = dict()
-    for i in nums:
-        x =nums.count(i)
-        dict1.update({i:x})
-
-    for key,val in dict1.items():
-
-        if val == k:
-            answer.append(key)
-
-        elif val > k:
-            answer.append(key)
-
-    return answer
+    pass
         
 print(topKFrequent(nums,k)) 
 

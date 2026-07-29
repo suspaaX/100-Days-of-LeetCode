@@ -315,7 +315,21 @@ arr = [10,20,30,40,50]
 # 1
 # 2
 # 3
-dict1 = {}
-dict1["d"] = 1
+# dict1 = {}
+# dict1["d"] = 1
 
-print(dict1)
+# print(dict1)
+
+num = [1,4,7,9,12]
+k =10
+
+def test(num):
+    for i in num:
+        if i>13:
+            return True
+        print(i)
+    else:
+        return False
+    
+
+print(test(num))

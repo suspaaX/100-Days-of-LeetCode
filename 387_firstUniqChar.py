@@ -59,7 +59,7 @@ def firstUniqChar(s):
         if val == 1:
             m = s.index(key)
             lst.append(m)
-    print(lst)
+
 
     if len(lst) >=1:
         return lst[0]

@@ -22,13 +22,11 @@ Output: true
 
 '''
 
-ransomNote = "aa"
-magazine = "aab"
-Output =  True
+# ransomNote = "aa"
+# magazine = "aab"
+# Output =  True
 
-# ransomNote = "aakkk"
-# magazine = "ab"
-# Output = False
+
 
 
 # ransomNote = "aa"
@@ -45,45 +43,53 @@ Output =  True
 # magazine = "b"
 # Output: False
 
-ransomNote = "abaa"
-magazine = "baaa"
-Output: True
+# ransomNote = "abaa"
+# magazine = "baaa"
+# Output: True
 
-ransomNote = "aa"
-magazine = "ab"
-Output: False
+# ransomNote = "aa"
+# magazine = "ab"
+# Output: False
 
 # ransomNote = "bg"
 # magazine =  "efjbdfbdgfjhhaiigfhbaejahgfbbgbjagbddfgdiaigdadhcfcj"
 # Output = True
 
-# ransomNote = "az"
-# magazine =  "ab"
-# Output = True
+ransomNote = "az"
+magazine =  "ab"
+Output = True
 
 # ransomNote = "fihjjjjei"
 # magazine =  "hjibagacbhadfaefdjaeaebgi"
 # Output = False
 
+# ransomNote = "aakkk"
+# magazine = "ab"
+# Output = False
 
 def canConstruct(ransomNote, magazine):
     dict1 = {}
-    set1 = set(ransomNote)
-    for st1 in set1:
-        n1 = ransomNote.count(st1)
-        dict1.update({st1:n1})
-
+    for i in ransomNote:
+        if i in dict1:
+            dict1[i] = dict1[i] +1
+        else:
+            dict1[i] = 1
 
     dict2 = {}
-    set2 = set(magazine)
-    for st2 in set2:
-        n2 = magazine.count(st2)
-        dict2.update({st2:n2})
- 
-    for  m,n in dict1.items():
-        if m in dict2 and n <= dict1.get(m):
-            return False
+    for k in magazine:
+        if k in dict2:
+            dict1[k] =dict2[k]+1
         else:
-            return True
+            dict2[k] =1
 
-print(canConstruct(ransomNote,magazine))
+    lst = []
+    for key,val in dict1.items():
+        print(key,dict2,val,dict2.get(key))
+        if key in dict2 and val <=dict2.get(key):
+            return True             
+        else:
+            return False
+
+
+
+print(canConstruct(ransomNote,magazine))    

@@ -30,9 +30,8 @@ def removeTrailingZeros(num):
     
     elif '0' in num:
         k = num[::-1]
-        print(k)
-        # int1 = str(int(k))
-        # int1_rev = int1[::-1]
-        # return int1_rev
+        int1 = str(int(k))
+        int1_rev = int1[::-1]
+        return int1_rev
 
 print(removeTrailingZeros(num)) 

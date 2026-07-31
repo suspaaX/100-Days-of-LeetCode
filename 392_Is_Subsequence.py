@@ -25,15 +25,15 @@ Output: false
 
 
 
-s = "axc"
-t = "ahbgdc"
-Output: False
+# s = "axc"
+# t = "ahbgdc"
+# Output: False
 
 
 s = "ab"
 t = "baab"
 
-# Output: True
+Output: True
 
 # s = "abc"
 # t = "ahbgdc"
@@ -43,31 +43,27 @@ t = "baab"
 # t = "ahbgdc"
 # Output =  True
 
-s = "acb"
-t = "ahbgdc"
+# s = "acb"
+# t = "ahbgdc"
+# output = False
+
+s = "b"
+t = "c"
 output = False
 
 
 def isSubsequence(s,t): 
-    x = [i for i in s]
 
-    x2 = []
-    for k in t:
-        if k in x:
-            x2.append(k)
-            for i in range(0,len(x2),len(x)):
-                x2.append(x2[0:i+len(x)])
-    print(x2)
+    ltr = str()
+    for i in t:
+        if i in s:
+            ltr = ltr+i
 
-
-
-
-    if x == x2 or x in x2:
+    if ltr in s:
         return True
     else:
         return False
 
-        
 
         
 

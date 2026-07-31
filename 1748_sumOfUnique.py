@@ -46,11 +46,6 @@ def sumOfUnique(nums) :
         if dict1.get(key) < 2:  
             sum1 = sum1+key  
     return sum1
-        # else:
-        #     return 0
-
-
-
 
 print(sumOfUnique(nums))     
 

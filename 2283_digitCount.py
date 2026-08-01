@@ -40,16 +40,12 @@ Output = True
 
 def digitCount(num) :
     dict1 = {}
-    for i in num:
-        k = num.count(i)
-        dict1.update({i:k})
-    print(dict1)
-
     for i,j in enumerate(num):
+        if i in dict1:
+            dict1[i] = dict1[i] +1
+        else:
+            dict1[i] = 1
 
-        # print(str(i),dict1.get(j),num)
-        print(f'num:{i}')
-
-
+    return dict1
 
 print(digitCount(num))

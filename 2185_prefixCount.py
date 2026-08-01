@@ -32,9 +32,9 @@ Output: 0
 def prefixCount(words,pref) :
     lst = []
     for i,j in enumerate(words):
-        # print(pref[0:len(pref)],j[0:len(pref)])
         if pref[0:len(pref)] in j[0:len(pref)]:
             lst.append(i)
+            
     return len(lst)
 
 print(prefixCount(words,pref))

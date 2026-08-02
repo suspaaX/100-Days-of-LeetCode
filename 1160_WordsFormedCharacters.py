@@ -68,49 +68,32 @@ chars = "atach"
 Output =  6
 
 def countCharacters(words,chars):
-    dict1 = {}
+    dict2 = {}
     for i in chars:
-        m = chars.count(i)
-        dict1.update({i:m})
+        if i in dict2:
+            dict2[i] = dict2[i]+1
+        else:
+            dict2[i] = 1
 
-    dict1_key = dict1.keys()
-    # print(dict1_key)
-    
-
-
-    lst1 = []
-    for k in words:
-        dict2 = {}
-        for l in k:
-            j = k.count(l)
-            dict2.update({l:j})
-        lst1.append(dict2)
-    # print(lst1)
-
-# {'c': 1, 'a': 1, 't': 1} {'a': 2, 't': 1, 'c': 1, 'h': 1}
-# {'b': 1, 't': 1} {'a': 2, 't': 1, 'c': 1, 'h': 1}
-# {'h': 1, 'a': 1, 't': 1} {'a': 2, 't': 1, 'c': 1, 'h': 1}
-# {'t': 1, 'r': 1, 'e': 2} {'a': 2, 't': 1, 'c': 1, 'h': 1}
-
-    result = []
-    for dict in lst1:
-        x = dict.keys()
-        if (set(x).issubset(set(dict1_key))):
-            result.append(dict)
-
-    result2 = []
-    for i in result:
-        # print(i,dict1)
-        for k in i:
-            print(k)
-    #         if i.get(k) <= dict1.get(k):
-    #             result2.append(i)
-
-    # # print(result2)
+    lst = []
+    for wd in words:
+        dict1 = {}
+        for alpha in wd:
+            if alpha in dict1:
+                dict1[alpha] = dict1[alpha]+1
+            else:
+                dict1[alpha] = 1
 
 
+        if set(dict1).issubset(dict2): 
+            lst.append(dict1)
+ 
+    for k in lst:
+        result = []
+        for key,val in k.items():
+            if val <= dict2.get(key):
+                result.append(k)
 
-
-
+                return result
 
 print(countCharacters(words,chars))

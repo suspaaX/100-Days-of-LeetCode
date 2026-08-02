@@ -23,15 +23,30 @@ Input: word = "FlaG"
 Output: false
 
 '''
-word = "FlaG"
+word = "Fla"
 Output = False
 
+word = "USA"
+Output = True
+
+word = 'g'
+output = False
 
 def detectCapitalUse(word) :
-    for j in word:
-        # print(j)
-        print(chr(65))
-        # print(num1)
+    small  = 'a b c d e f g h i j k l m n o p q r s t u v w x y z'
+    cap = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
+    f = word[0]
+    s = word[1:len(word)]
 
-detectCapitalUse(word)
+    if word[0] in cap and set(s).issubset(set(cap)):
+        return True
+    elif word[0] in cap and set(s).issubset(set(small)):
+        return True
+    elif word[0] in small and set(s).issubset(set(small)):
+        return True
+    else:
+        return False
+    
+
+print(detectCapitalUse(word))

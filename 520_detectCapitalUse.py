@@ -48,5 +48,4 @@ def detectCapitalUse(word) :
     else:
         return False
     
-
 print(detectCapitalUse(word))

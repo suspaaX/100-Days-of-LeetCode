@@ -58,8 +58,7 @@ def countWords(words1,words2) :
     for key in dict1:
         if key in dict2 and dict2.get(key) == 1 and dict1.get(key)==1 :
             lst.append(key)
-    print(lst)
-    return len(lst)
 
+    return len(lst)
 
 print(countWords(words1,words2))

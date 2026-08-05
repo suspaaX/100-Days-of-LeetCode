@@ -22,9 +22,9 @@ Output: true
 
 '''
 
-# ransomNote = "aa"
-# magazine = "aab"
-# Output =  True
+ransomNote = "aa"
+magazine = "aab"
+Output =  True
 
 
 
@@ -55,9 +55,9 @@ Output: true
 # magazine =  "efjbdfbdgfjhhaiigfhbaejahgfbbgbjagbddfgdiaigdadhcfcj"
 # Output = True
 
-ransomNote = "az"
-magazine =  "ab"
-Output = True
+# ransomNote = "az"
+# magazine =  "ab"
+# Output = True
 
 # ransomNote = "fihjjjjei"
 # magazine =  "hjibagacbhadfaefdjaeaebgi"
@@ -75,21 +75,25 @@ def canConstruct(ransomNote, magazine):
         else:
             dict1[i] = 1
 
+
     dict2 = {}
     for k in magazine:
         if k in dict2:
-            dict1[k] =dict2[k]+1
+            dict2[k] =dict2[k]+1
         else:
             dict2[k] =1
 
-    lst = []
+    lst1 = []
     for key,val in dict1.items():
-        print(key,dict2,val,dict2.get(key))
-        if key in dict2 and val <=dict2.get(key):
-            return True             
+        if key in dict2 and val<=dict2.get(key):
+            lst1.append(True)
         else:
-            return False
+            lst1.append(False)
 
+    if False in lst1:
+        return False
+    else:
+        return True
 
 
 print(canConstruct(ransomNote,magazine))    

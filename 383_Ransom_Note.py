@@ -75,7 +75,6 @@ def canConstruct(ransomNote, magazine):
         else:
             dict1[i] = 1
 
-
     dict2 = {}
     for k in magazine:
         if k in dict2:

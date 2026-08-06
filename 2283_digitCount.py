@@ -35,17 +35,31 @@ The indices 0 and 1 both violate the condition, so return false.
 '''
 num = "030"
 Output =  False
+
 num = "1210"
 Output = True
 
 def digitCount(num) :
     dict1 = {}
-    for i,j in enumerate(num):
+    for i in  num:
         if i in dict1:
             dict1[i] = dict1[i] +1
         else:
             dict1[i] = 1
+    
+    result = []
+    for i,j in enumerate(num):
+        m = dict1.get(j)
+        print(m)
 
-    return dict1
+        if j in  dict1 and i == m:
+            result.append(True)
+        else:
+            result.append(False)
+
+    print(result)
+
+            
+
 
 print(digitCount(num))

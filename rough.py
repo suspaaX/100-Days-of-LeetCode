@@ -320,16 +320,31 @@ arr = [10,20,30,40,50]
 
 # print(dict1)
 
-num = [1,4,7,9,12]
-k =10
+# num = [1,4,7,9,12]
+# k =10
 
-def test(num):
-    for i in num:
-        if i>13:
-            return True
-        print(i)
-    else:
-        return False
+# def test(num):
+#     for i in num:
+#         if i>13:
+#             return True
+#         print(i)
+#     else:
+#         return False
     
 
-print(test(num))
+# print(test(num))
+
+
+name = ['abhishek','tinku']
+
+dict1 =  {}
+
+for k in name:
+    dict2 = {}
+    for m in k:
+        if m in dict2:
+            dict2[m] = dict2[m] + 1
+        else:
+            dict2[m] =1
+    dict1.update({k:dict2})
+print(dict1)

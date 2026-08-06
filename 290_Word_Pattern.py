@@ -76,29 +76,26 @@ def wordPattern(pattern, s) :
     ssplt = s.split()
 
     dict1 = {}
-
     for i,j in zip(pattern,ssplt):
         dict1.update({i:j})
 
     print(dict1)
 
-    slst1 = []
-    for i in ssplt:
-        print(i,dict1.values())
-        if i in dict1.values():
-            slst1.append(i)
-    print(slst1,ssplt)
+    # slst1 = []
+    # for i in ssplt:
+    #     if i in dict1.values():
+    #         slst1.append(i)
 
     
-    sresult = ''
-    for i in slst1:
-        sresult = sresult+i
-    print(pattern,sresult)
+    # sresult = ''
+    # for i in slst1:
+    #     sresult = sresult+i
+    # print(pattern,sresult)
 
-    if pattern == sresult:
-        return True
-    else:
-        return False
+    # if pattern == sresult:
+    #     return True
+    # else:
+    #     return False
 
 
 (wordPattern(pattern, s))

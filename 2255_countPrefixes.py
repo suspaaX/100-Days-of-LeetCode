@@ -41,7 +41,7 @@ Output: 2
 
 def countPrefixes(words,s):
     lst = []
-    for i in set(words):
+    for i in (words):
         if i[0:len(i)] in s[0:len(i)]:
             lst.append(i)
 

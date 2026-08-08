@@ -107,7 +107,6 @@ def checkAlmostEquivalent(word1,word2):
                 if 0<diff>=4:
                     result.append(False)
 
-    print(result)
 
                 
     if False in result:

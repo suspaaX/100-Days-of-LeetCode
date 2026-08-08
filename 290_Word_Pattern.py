@@ -67,36 +67,22 @@ pattern = "abba"
 s = "dog cat cat dog"
 Output =  True
 
-# pattern = "abc"
-# s = "b c a"
-# Output =  True
+pattern = "abc"
+s = "b c a"
+Output =  True
 
 
 def wordPattern(pattern, s) :
-    ssplt = s.split()
+    x = s.split()
 
     dict1 = {}
-    for i,j in zip(pattern,ssplt):
-        dict1.update({i:j})
+    for i in x:
+        if i in dict1:
+            dict1[i] = dict1[i] + 1
+        else:
+            dict1[i] = 1
 
     print(dict1)
-
-    # slst1 = []
-    # for i in ssplt:
-    #     if i in dict1.values():
-    #         slst1.append(i)
-
-    
-    # sresult = ''
-    # for i in slst1:
-    #     sresult = sresult+i
-    # print(pattern,sresult)
-
-    # if pattern == sresult:
-    #     return True
-    # else:
-    #     return False
-
 
 (wordPattern(pattern, s))
         

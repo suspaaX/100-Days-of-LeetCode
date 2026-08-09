@@ -351,9 +351,9 @@ arr = [10,20,30,40,50]
 
 
 k = [1,3,4,6]
-
+i =1
 num = 6
-if num>2 in k:
+if num+i>k:
     print(True)
 else:
     print(False)

@@ -44,7 +44,7 @@ Output: 0
 
 
 # "aaabaaaabaaabaaaabaaaabaaaabaaaaba"
-sequence = "aaaba aaaba aabaaaabaaaabaaaabaaaaba"
+sequence = "aaaba aaab aaaba aaaba aaaba aaaba aaaba"
 word = "aaaba"
 Output: 5
 

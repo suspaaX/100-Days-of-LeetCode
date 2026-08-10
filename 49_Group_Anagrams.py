@@ -34,9 +34,26 @@ Output =  [["bat"],["nat","tan"],["ate","eat","tea"]]
 
 
 def groupAnagrams(strs) :   
-    for i in range(0,len(strs)):
-        print(strs[i],(strs[i+1:len(strs)]))
+    all_dict1 = []
+    for i in strs:
+
+        dict2 = {}
+        for m in i:
+            if m in  dict2:
+                dict2[m] = dict2[m] +1
+            else:
+                dict2[m] = 1
+
+            rslt = []
+            for key,val in dict2.items() :
+                if m in key:
+                    rslt.append(i)
+
+            print(rslt)
+
         
+
+
 
 
 

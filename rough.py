@@ -350,10 +350,21 @@ arr = [10,20,30,40,50]
 # print(dict1)
 
 
-k = [1,3,4,6]
-i =1
-num = 6
-if num+i>k:
-    print(True)
-else:
-    print(False)
+# k = [1,3,4,6]
+# i =1
+# num = 6
+# if num+i>k:
+#     print(True)
+# else:
+#     print(False)
+
+
+num1 = 2
+num2 = 10
+
+
+diff = (num2+1)-num1
+print(int(diff/2))
+
+
+

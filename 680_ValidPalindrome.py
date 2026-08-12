@@ -29,47 +29,38 @@ s = "abc"
 Output =  False
 
 # s = "abca"
-# Output: True
+# Output: False
 
-s = "aba"
-Output =  True
 
-s = "bebeb"
-Output =  True
+# s = "bebeb"
+# Output =  True
 
 s = "cbbcc"
 Output =  True
 
+# s = "aba"
+# Output =  True
 
 def validPalindrome(s) :
-    sd = [i for i in s]
-
-    if s[:] == s[::-1]:
+    m = s[::-1]
+    
+    if s == m:
         return True
+    elif s!=m:
+        lst2 = []
+        for i,j in enumerate(s):
+            m =i,j
+            lst2.append(m)
+        print(lst2)
 
-    elif s[:] != s[::-1]:
-        lst = []
-        skip = 0
+        lst  = []
         str1 = ''
-        for i in range(0,len(s)):
-            if i != skip:
-                str1= str1+s[i]
+        for l in lst2:
+            # print(l[1])
+            if l[0] not in lst2[0]:
+                str1 = str1+l[1]
                 lst.append(str1)
-                # skip = skip+1
-
-
-        print(lst)
-                
-
-
-            
-
-
-        # for i in lst:
-        #     if i == i[::-1]:
-        #         return True
-        # else:
-        #     return False
+        print(lst)   
 
         
 print(validPalindrome(s))

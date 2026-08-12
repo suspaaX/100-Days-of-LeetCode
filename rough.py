@@ -359,12 +359,18 @@ arr = [10,20,30,40,50]
 #     print(False)
 
 
-num1 = 2
-num2 = 10
+# num1 = 2
+# num2 = 10
 
 
-diff = (num2+1)-num1
-print(int(diff/2))
+# diff = (num2+1)-num1
+# print(int(diff/2))
 
+num = [4,3]
 
+lst = [num[1]]
 
+for i in num:
+    k = i*str(lst)
+    lst.append((k))
+print(lst)

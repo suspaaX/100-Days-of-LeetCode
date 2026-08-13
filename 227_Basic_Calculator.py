@@ -38,7 +38,7 @@ Output = 1
 
 def calculate(s):
     list1 = s.strip()
-    if 
+    pass
 
 
 

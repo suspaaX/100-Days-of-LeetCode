@@ -31,20 +31,12 @@ s = "bbaacaab"
 Output =  "ca"
 
 def removeDuplicates(s):
-        
-    ltr = s
+    for i in range(len(s)-1):
+        for k in s:
+            if 2*s[i] in s:
+                s.replace(2*s[i],' ')
+                print(s)
 
-    for i in s:
-        k = i*2
-        
-        if k in s:
-            m = s.replace(k,'')
-            return m
 
-        if k in m:
-            j = m.replace(k,'')
-            ltr = j
-
-    return ltr
 
 print(removeDuplicates(s))

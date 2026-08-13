@@ -41,7 +41,18 @@ Output =  [1,2]
 # Output = [1,2]
 
 def topKFrequent(nums,k) :
-    pass
+    dict1 = {}
+    for i in nums:
+        if i in dict1:
+            dict1[i] = dict1[i]+1
+        else:
+            dict1[i] = 1
+
+    
+
+    # lst = []
+    # for key,val in dict1.items():
         
+
 print(topKFrequent(nums,k)) 
 

@@ -58,7 +58,7 @@ def maxLengthBetweenEqualCharacters(s):
             lst.append(wd)
     print(lst)  
 
-    result = []
+    result = [] 
     for k in lst:
         m = k[1:len(k)-1]
         result.append(len(m))

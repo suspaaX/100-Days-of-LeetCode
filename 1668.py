@@ -31,32 +31,32 @@ sequence = "ababc"
 word = "ba"
 Output: 1
 
-sequence = "ababc" 
-word = "ab"
-Output: 2
+# sequence = "ababc" 
+# word = "ab"
+# Output: 2
 
-sequence = "ababc"
-word = "ac"
-Output: 0
-
-
+# sequence = "ababc"
+# word = "ac"
+# Output: 0
 
 
 
-# "aaabaaaabaaabaaaabaaaabaaaabaaaaba"
-sequence = "aaaba aaab aaaba aaaba aaaba aaaba aaaba"
-word = "aaaba"
-Output: 5
+
+
+
+# sequence = "aaabaaaabaaabaaaabaaaabaaaabaaaaba"
+# word = "aaaba"
+# Output: 5
 
 
 
 def maxRepeating(sequence,word):
     lst = []
-    for i,j in enumerate(sequence):
-        if word in sequence:
-            lst.append(i)
-    print(lst)
-
+    if word in sequence:
+        x = sequence.replace(word,'0')
+        print(x)
+    else:
+        return 0
 
 
 

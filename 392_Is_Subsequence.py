@@ -1,9 +1,6 @@
 '''
 392. Is Subsequence
-Easy
-Topics
-premium lock icon
-Companies
+
 Given two strings s and t, return true if s is a subsequence of t, or false otherwise.
 
 A subsequence of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
@@ -35,34 +32,33 @@ Output: False
 
 # Output: True
 
-# s = "abc"
-# t = "ahbgdc"
-# Output =  True
+s = "abc"
+t = "ahbgdc"
+Output =  True
 
 # s= ""
 # t = "ahbgdc"
 # Output =  True
 
-# s = "acb"
-# t = "ahbgdc"
-# output = False
+s = "acb"
+t = "ahbgdc"
+output = False
 
 # s = "b"
 # t = "c"
 # output = False
 
+# s = "ab"
+# t = "baab"
+# output = True
+
 
 def isSubsequence(s,t): 
-    ltr = ''
-    for k in t:
-        if k in s:
-            ltr = ltr+k
-    print(ltr)
-
-    if s == ltr:
-        return True
-    else:
-        return False
+    for k in s:
+        if k in t:
+            return True
+        else:
+            return False
         
 
 print((isSubsequence(s,t)))

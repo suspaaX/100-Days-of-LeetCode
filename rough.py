@@ -1,3 +1,36 @@
+'''
+
+|   # | LeetCode | Question                             | Difficulty |  ✓  |
+| --: | -------: | ------------------------------------ | :--------: | :-: |
+|  79 |   **20** | Valid Parentheses                    |    Easy    |  ☐  |
+|  80 |  **125** | Valid Palindrome                     |    Easy    |  ☐  |
+|  81 |  **242** | Valid Anagram                        |    Easy    |  ☐  |
+|  82 |  **349** | Intersection of Two Arrays           |    Easy    |  ☐  |
+|  83 |  **387** | First Unique Character in a String   |    Easy    |  ☐  |
+|  84 |  **205** | Isomorphic Strings                   |    Easy    |  ☐  |
+|  85 |  **290** | Word Pattern                         |    Easy    |  ☐  |
+|  86 |  **599** | Minimum Index Sum of Two Lists       |    Easy    |  ☐  |
+|  87 |  **219** | Contains Duplicate II                |    Easy    |  ☐  |
+|  88 |  **228** | Summary Ranges                       |    Easy    |  ☐  |
+|  89 |  **443** | String Compression                   |   Medium   |  ☐  |
+|  90 |  **459** | Repeated Substring Pattern           |    Easy    |  ☐  |
+|  91 |  **680** | Valid Palindrome II                  |    Easy    |  ☐  |
+|  92 |  **844** | Backspace String Compare             |    Easy    |  ☐  |
+|  93 |  **929** | Unique Email Addresses               |    Easy    |  ☐  |
+|  94 | **1071** | Greatest Common Divisor of Strings   |    Easy    |  ☐  |
+|  95 | **1207** | Unique Number of Occurrences         |    Easy    |  ☐  |
+|  96 | **1436** | Destination City                     |    Easy    |  ☐  |
+|  97 | **1657** | Determine if Two Strings Are Close   |   Medium   |  ☐  |
+|  98 | **1768** | Merge Strings Alternately            |    Easy    |  ☐  |
+|  99 | **1859** | Sorting the Sentence                 |    Easy    |  ☐  |
+| 100 | **1961** | Check If String Is a Prefix of Array |    Easy    |  ☐  |
+| 101 | **2185** | Counting Words With a Given Prefix   |    Easy    |  ☐  |
+| 102 | **2278** | Percentage of Letter in String       |    Easy    |  ☐  |
+| 103 | **2418** | Sort the People                      |    Easy    |  ☐  |
+
+'''
+
+
 # num = [5]
 
 # def all_num(num):
@@ -366,11 +399,16 @@ arr = [10,20,30,40,50]
 # diff = (num2+1)-num1
 # print(int(diff/2))
 
-num = [4,3]
+# num = [4,3]
 
-lst = [num[1]]
+# lst = [num[1]]
 
-for i in num:
-    k = i*str(lst)
-    lst.append((k))
-print(lst)
+# for i in num:
+#     k = i*str(lst)
+#     lst.append((k))
+# print(lst)
+
+
+k = ['12']
+for i in k:
+    

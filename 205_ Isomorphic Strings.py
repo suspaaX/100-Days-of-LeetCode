@@ -53,10 +53,6 @@ t = "b23"
 
 # Output: False
 
-s = "egg"
-t = "add"
-
-Output: True 
 
 s = "paper"
 t = "title"
@@ -88,39 +84,56 @@ Output: True
 # t = "aa"
 
 # Output: False
+s = "egg"
+t = "add"
+
+Output: True 
 
 def isIsomorphic(s,t) :
 
 
-    if len(set(s)) == len(set(t)):
-        return True
+    # if len(set(s)) == len(set(t)):
+    #     return True
     
-    elif len(s) > 2 and len(t) > 2:
+    # elif len(s) > 2 and len(t) > 2:
 
-        dict1 = {}
-        for i,j in zip((s),(t)):
-            dict1.update({i:j})
-        # print(dict1)
+    #     dict1 = {}
+    #     for i,j in zip((s),(t)):
+    #         dict1.update({i:j})
+    #     # print(dict1)
 
-        new_wd = ''
-        for i in s:
-            # print(i,dict1)
-            val = dict1.get(i)
-            if i in dict1 and val not in i:
-                new_wd = new_wd+val
+    #     new_wd = ''
+    #     for i in s:
+    #         # print(i,dict1)
+    #         val = dict1.get(i)
+    #         if i in dict1 and val not in i:
+    #             new_wd = new_wd+val
 
-            # elif i in dict1 :
-            #     new_wd = new_wd+val
+    #         # elif i in dict1 :
+    #         #     new_wd = new_wd+val
 
-        print(new_wd)
+    #     print(new_wd)
 
-        if new_wd == t:
-            return True
+    #     if new_wd == t:
+    #         return True
+    #     else:
+    #         return False
+
+    # else:
+    #     return False
+
+    dict1 = {}
+    for i in zip(s,t):
+        if i in dict1:
+            dict1[i] = dict1[i]+1
         else:
-            return False
+            dict1[i] = 1
 
-    else:
-        return False
+    print(dict1)
+
+        
+
+
 
 
 

@@ -34,18 +34,40 @@ Explanation: There are three common strings:
 "good" with index sum = (2 + 2) = 4.
 The strings with the least index sum are "sad" and "happy".
 '''
-list1 = ["happy","sad","good"]
-list2 = ["sad","happy","good"]
-Output =  ["sad","happy"]
-
-
 list1 = ["Shogun","Tapioca Express","Burger King","KFC"]
 list2 = ["KFC","Shogun","Burger King"]
 Output =  ["Shogun"]
 
+# list1 = ["happy","sad","good"]
+# list2 = ["sad","happy","good"]
+# Output =  ["sad","happy"]
+
+
+
 def findRestaurant(list1,list2):
-    for i,j in enumerate(list1) :
+    result = []
+
+    dict1 = {}
+    sum1 = 0
+    lst = []
+    for i,j in enumerate(list1):
         if j in list2:
-            pass
+            k = list2.index(j)
+            sum1 = (i+k),j
+            lst.append(sum1)
+
+    result = []
+    for i,j in enumerate(lst):
+
+        # print(j[0])
+        print(lst[i+1:len(lst)])
+
+    #     if j[0] in lst[i+1:len(lst)]:
+    #         result.append(j[1])
+    #     else:
+    #         result.append(j[0][1])
+
+    # print(result)
+
 
 print(findRestaurant(list1,list2))

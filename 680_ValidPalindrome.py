@@ -42,9 +42,17 @@ s = "aba"
 Output =  True
 
 def validPalindrome(s) :
+
+    lst = []
+    for i in range(0,len(s)):
+        for k in s:
+            lst.append()
+
+
     pali = s[::-1]
     if s == pali:
         return True
+
     else:
         return False
         

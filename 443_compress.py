@@ -87,7 +87,7 @@ def compress(chars):
     #     if chars[i] != chars[i+1:len(chars)]:
     #         str1.append(chars[i])
     # print(str1)
-
+    pass
 
 
 (compress(chars))

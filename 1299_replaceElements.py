@@ -34,11 +34,7 @@ Output = [-1]
 def replaceElements(arr):
     lst = []
     for i in range(len(arr)-1):
-
         k =max(arr[i+1:len(arr)])
-
-        print(arr[i],arr[i+1:len(arr)],k)
-
         lst.append(k)
 
     return (lst+[-1])

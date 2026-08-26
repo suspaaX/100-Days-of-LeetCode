@@ -37,8 +37,6 @@ Explanation: The groups are "a" and "bbbbbbbbbbbb". This compresses to "ab12".
 After modifying the input array in-place, the first 4 characters of chars should be ["a","b","1","2"].
 '''
 
-chars = ["a","a","b","b","c","c","c"]
-Output: 6
 
 # chars = ["a"]
 # Output: 1
@@ -46,48 +44,44 @@ Output: 6
 # chars = ["a","b","b","b","b","b","b","b","b","b","b","b","b"]
 # Output: 4
 
-chars = ["a","a","a","b","b","a","a"]
-Output: 4
+# chars = ["a","a","a","b","b","a","a"]
+# Output: 4
+
+chars = ["a","a","b","b","c","c","c"]
+Output: 6
 
 def compress(chars):
 
-#     for i,j in enumerate(chars):
-#         if chars[i] == chars[i+1:len(chars)]:
-#             pass
+    '''
+    dict1 = {}
+    for i in chars:
+        if i in dict1:
+            dict1[i] = dict1[i] + 1
+        else:
+            dict1[i] = 1
 
-#     dict1 = {}
-#     for i in chars:
-#         if i in dict1:
-#             dict1[i] = dict1[i] + 1
-#         else:
-#             dict1[i] = 1
-#     print(dict1)
-    
-#     lst =  []
-#     for key,val in dict1.items():
-#         lst.append(key)
-#         if val >1:
-#             lst.append(str(val))
+    lst =  []
+    for key,val in dict1.items():
+        lst.append(key)
+        if val >1:
+            lst.append(str(val))
 
-#     lst2 = []
-#     for k in lst:
-#         if len(k) == 1:
-#             lst2.append(k)
-#         elif len(k)>1:
-#             for m in k:
-#                 lst2.append(str(m))
+    lst2 = []
+    for k in lst:
+        if len(k) == 1:
+            lst2.append(k)
+        elif len(k)>1:
+            for m in k:
+                lst2.append(str(m))
 
-#     chars[:] = lst2 
-#     return len(chars)
+    chars[:] = lst2 
+    return len(chars)
    
-# print(compress(chars))
-    str1 = []
-    for i in range(0,len(chars)):
-        print(chars[i],chars[i+1:len(chars)])
-    #     if chars[i] != chars[i+1:len(chars)]:
-    #         str1.append(chars[i])
-    # print(str1)
-    pass
+    '''
+    for i,j in enumerate(chars):
+        for k in chars:
+            if k in chars[i:len(chars)]:
+                print(k,i)
 
 
-(compress(chars))
+print((compress(chars)))

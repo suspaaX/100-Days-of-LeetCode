@@ -29,25 +29,19 @@ Output: 91
 '''
 
     
-boxTypes = [[1,3],[2,2],[3,1]]
-truckSize = 4
-Output: 8
+# boxTypes = [[1,3],[2,2],[3,1]]
+# truckSize = 4
+# Output: 8
 
 boxTypes = [[5,10],[2,7],[3,9]]
 truckSize = 10
 Output: 91
 
 def maximumUnits(boxTypes, truckSize):
-    if len(boxTypes) <= truckSize:
-        sum1 = []
-        for i in boxTypes:
-            mul = 1
-            lst = []
-            for j in i:
-                mul = mul*j
-            sum1.append(mul)
-            
-        return sum(sum1)      
+    boxTypes.sort(reverse=True)
+    print(boxTypes)
+    # for k in boxTypes:
+    #     print(k)
 
 
 print(maximumUnits(boxTypes, truckSize))
